@@ -1,5 +1,10 @@
 <script>
-    "Javascript/SvelteKIT code here"
+    const getProductcatalogue = async () => {
+        const res = await fetch("src/JSON/produktkatalog_sv.json");
+        const data = await res.json();
+        return data;
+    }
+
 </script>
 
 
@@ -11,6 +16,21 @@
     <h1 class="text-3xl font-bold "> Welcome to ArmIT </h1>
     <p class=" text-sm font-semibold">This site is under construction 🛠️</p>
     <p>In the meantime.. check this out <a class="underline" href="https://chalmers.it">link</a> </p>
+
+    {#await getProductcatalogue()}
+    <p>Loading...</p>
+    {:then data} 
+    {#each data.products as product}
+    <div class=" grid-cols-3 max-w-sm bg-cyan-800 text-center justify-center">
+        <div>
+            <h1 class="justify-center text-white font-semibold">{product.product}</h1>
+        </div>
+        
+    </div>
+    {/each}
+    
+    {/await}
+    
 </div>  
 
 
