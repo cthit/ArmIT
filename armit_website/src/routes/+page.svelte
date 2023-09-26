@@ -1,37 +1,34 @@
 <script>
-    const getProductcatalogue = async () => {
-        const res = await fetch("src/JSON/produktkatalog_sv.json");
-        const data = await res.json();
-        return data;
+    import { goto } from '$app/navigation';
+    import { browser } from '$app/environment';
+    import { getProductcatalogue } from "../scripts/getProductcatalogue"
+
+    let maintenanceMode = false; 
+
+    if(maintenanceMode == true && browser) {
+        goto("/maintenance");
     }
+    
 </script>
 
-<div class="w-full h-3/4 text-center items-center">
-    <div class="flex w-full justify-center items-center py-8">
-        <img class="h-1/3 max-h-72" alt="ArmIT Logo" src="/ArmITLogga.png"/>
-    </div>
 
-    <h1 class="text-3xl font-bold "> Welcome to ArmIT </h1>
-    <p class=" text-sm font-semibold">This site is under construction 🛠️</p>
-    <p>In the meantime.. check this out <a class="underline" href="https://chalmers.it">link</a> </p>
-
-    {#await getProductcatalogue()}
+<div>
+    {#await getProductcatalogue("sv")}
     <p>Loading...</p>
     {:then data} 
     {#each data.products as product}
     <div class=" grid-cols-3 max-w-sm bg-cyan-800 text-center justify-center">
         <div>
-            <h1 class="justify-center text-white font-semibold">{product.product}</h1>
+            <h1 class="justify-center text-white font-semibold">{product.itemName}</h1>
+            <h1 class="justify-center text-white font-semibold">{product.price}</h1>
+            <h1 class="justify-center text-white font-semibold">{product.time}</h1>
         </div>
         
     </div>
     {/each}
     
     {/await}
-    
-</div>  
-
-
+</div>
 
 
   <style lang="postcss">

@@ -1,5 +1,12 @@
 {
     "products":[
-        {}
+        {
+            "itemName": "Lunchtime Lecture",
+            "description": "null as of now",
+            "capacity": "100",
+            "time":"45min - 1h",
+            "price": "10 000",
+            "extras":[{"type": "photoshoot", "price":"1000"}]
+    }
     ]
 }
