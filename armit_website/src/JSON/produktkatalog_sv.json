@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "product": "Lunchföreläsning",
+            "description": "null as of now",
+            "capacity": "100",
+            "time":"45min - 1h",
+            "price": "10 000",
+            "extras":[{"type": "fotografering", "price":"1000"}]
+        },
+        {
+            "product": "Digitalt Event",
+            "description": "null as of now",
+            "capacity": "50+",
+            "time":"45min - 1h",
+            "price": "10 000",
+            "extras":[]
+        },
+        {
+            "product": "Mingelkväll",
+            "description":"null as of now",
+            "capacity":"your choice",
+            "time":"2h",
+            "price":"10 000",
+            "extras":[{"type":"fotografering", "price":"1500"}]
+        }
+    ]
+}
