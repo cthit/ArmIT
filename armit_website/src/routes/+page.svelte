@@ -4,13 +4,11 @@
         const data = await res.json();
         return data;
     }
-
 </script>
-
 
 <div class="w-full h-3/4 text-center items-center">
     <div class="flex w-full justify-center items-center py-8">
-        <img class="h-1/3 max-h-72" alt="ArmIT Logo" src="/ArmITLogga.png"  />
+        <img class="h-1/3 max-h-72" alt="ArmIT Logo" src="/ArmITLogga.png"/>
     </div>
 
     <h1 class="text-3xl font-bold "> Welcome to ArmIT </h1>
@@ -37,7 +35,7 @@
 
 
   <style lang="postcss">
-    :global(html) {
+    /*:global(html) {
         @apply bg-blue-200;
-    }
+    }*/
   </style>
