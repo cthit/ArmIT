@@ -27,9 +27,9 @@
     // window.addEventListener('mouseleave', handleMouseLeave);
 </script>
 
-<div class="relative h-screen mt-2">
-    <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        <img class="h-1/3  lg:max-h-96 md:max-h-72 sm:max-h-44 mx-auto" alt="ArmIT Logo" src="/ArmITLogga.png"  />
+<div class="select-none">
+    <div class="text-center">
+        <img draggable="false" class=" h-1/3  lg:max-h-96 md:max-h-72 sm:max-h-44 mx-auto" alt="ArmIT Logo" src="/ArmITLogga.png"  />
         
         <p class="text-sm font-semibold my-4">This site is under construction</p>
 
