@@ -12,6 +12,11 @@ export default {
         'bgLight': '#4DADF3',
         'bgMedium': '#61BDFF',
         'bgDark': '#2361BD',
+        'nav': '#1a2d45',
+        'navtext': '#214173',
+      },
+      backgroundImage: {
+        'header': "url('/header1.png/')",
       },
     }
   },

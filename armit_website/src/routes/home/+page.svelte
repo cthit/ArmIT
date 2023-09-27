@@ -1,13 +1,16 @@
-<div class="flex flex-col h-screen max-w-full bg-gradient-to-t from-bgDark via-bgMedium to-bgLight">
-    <nav class="flex w-full h-32 text-white">
-        <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
+<div class="flex flex-col h-screen max-w-full bg-gradient-to-t from-bgDark to-bgMedium">
+    <nav class="flex w-full h-32 border-b-2 border-white text-white">
+        <div class="flex basis-1/3 justify-start items-center p-12 text-xl m-0 font-inter">
             <a href="/" class="flex items-center gap-4">
-                <img class="h-24" alt="ArmIT Logo" src="/ArmITLogo_plain.png"/>ArmIT</a>
+                <img class="h-24" alt="ArmIT Logo" src="/ArmITLogo_plain.png"/>
+            </a>
         </div>
-        <div class="flex flex-grow justify-end gap-20 p-12 items-center text-xl m-0 font-inter">
+        <div class="flex flex-grow justify-center gap-40 p-12 items-center text-xl m-0 font-inter md:visible invisible">
             <div>Services</div>
             <div>Team</div>
             <div>DatE-IT</div>
+        </div>
+        <div class="flex flex-grow justify-end p-12 items-center text-xl m-0 font-inter md:visible invisible">
             <a href="/" class="px-8 py-3 leading-none border-2 border-white lg:mt-0">Contact</a>
         </div>
     </nav>
@@ -34,3 +37,5 @@
         </div>
     </header>
 </div>
+
+
