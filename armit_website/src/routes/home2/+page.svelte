@@ -26,12 +26,12 @@
                         <a href="/" class="flex justify-center px-8 py-3 w-1/3 md:visible invisible leading-none drop-shadow-xl bg-white text-navtext lg:mt-0">Our services</a>
                     </div>
                 </div>
-                <div class="flex flex-col flex-grow justify-end gap-2 lg:text-start text-center lg:pl-40 mb-4 w-2/3 text-navtext overflow-hidden 2xl:text-2xl lg:text-xl">
+                <div class="flex flex-col flex-grow justify-center lg:justify-end gap-2 lg:text-start text-center lg:pl-40 mb-4 w-2/3 text-navtext overflow-hidden 2xl:text-2xl lg:text-xl">
                     Trusted by 
                     <div class="flex items-center lg:justify-start justify-center w-full gap-12">
-                        <img class="h-auto sm:w-1/3 md:w-1/5 max-h-full" alt="Centiro" src="/Centiro_logo.png"/>
-                        <img class="h-auto sm:w-1/3 md:w-1/5 max-h-full" alt="Opera" src="/Opera_GX_logo.png"/>
-                        <img class="h-auto sm:w-1/3 md:w-1/5 max-h-full pb-4" alt="Accenture" src="/Accenture_logo.png"/>
+                        <img class="h-auto w-1/3 md:w-1/5 max-h-full" alt="Centiro" src="/Centiro_logo.png"/>
+                        <img class="h-auto w-1/3 md:w-1/5 max-h-full" alt="Opera" src="/Opera_GX_logo.png"/>
+                        <img class="h-auto w-1/3 md:w-1/5 max-h-full pb-4" alt="Accenture" src="/Accenture_logo.png"/>
                     </div>
                 </div> 
             </div>
