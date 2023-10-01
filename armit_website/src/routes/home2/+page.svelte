@@ -6,11 +6,16 @@
                     <img class="h-24" alt="ArmIT Logo" src="/ArmITLogo_plain.png"/>
                 </a>
             </div>
-            <div class="flex flex-grow justify-end p-12 gap-20 items-center text-xl m-0 font-inter lg:visible invisible">
+            <div class="flex-grow justify-end p-12 gap-20 items-center text-xl m-0 font-inter lg:flex hidden">
                 <a href="/" class="drop-shadow-lg">Services</a>
                 <a href="/" class="drop-shadow-lg">Team</a>
                 <a href="https://date-it.se/" target="_blank" class="drop-shadow-lg">DatE-IT</a>
                 <a href="/" class="px-8 py-3 drop-shadow-xl leading-none bg-navtext lg:mt-0">Contact</a>
+            </div>
+            <div class="flex-grow justify-end p-12 items-center lg:hidden flex">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
             </div>
         </nav>
         <header class="flex h-full font-inter text-white">
