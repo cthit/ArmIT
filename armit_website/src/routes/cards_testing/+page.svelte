@@ -8,6 +8,6 @@
 
 <style lang="postcss">
     :global(html) {
-        @apply bg-purple-200;
+        @apply bg-[#EAE5FF];
     }
   </style>

@@ -8,6 +8,24 @@
             "price": "10 000",
             "iconPath": "/teacher_whiteboard.png",
             "extras":[{"type": "photoshoot", "price":"1000"}]
+        },
+        {
+            "itemName": "Hackatons",
+            "description": "Engage your audience in a hands-on event where  learning together plays an important role",
+            "capacity": "not set",
+            "time":"not set",
+            "price": "not decided",
+            "iconPath": "/icon_hackatons.png",
+            "extras":[{"type": "photoshoot", "price":"1000"}]
+        },
+        {
+            "itemName": "not set",
+            "description": "Engage your audience in a hands-on event where  learning together plays an important role",
+            "capacity": "not set",
+            "time":"not set",
+            "price": "not decided",
+            "iconPath": "/",
+            "extras":[{"type": "photoshoot", "price":"1000"}]
         }
     ]
 }
