@@ -16,7 +16,7 @@ export default {
         'navtext': '#214173',
       },
       backgroundImage: {
-        'header': "url('/header3.png/')",
+        'header': "url('/header4.png/')",
         'header-mobile': "url('header_phone.png/')",
       },
       spacing: {
