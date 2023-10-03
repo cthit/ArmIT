@@ -1,7 +1,6 @@
 <script>
     let activeMenuContainer;
     function toggleMobileMenu(menuContainer){
-        menuContainer.classList.toggle("-translate-y-full");
         menuContainer.classList.toggle("opacity-100");
         document.body.classList.toggle("overflow-hidden");
     }
@@ -61,7 +60,7 @@
                 </div>
             </header>
         </div>
-        <div bind:this="{activeMenuContainer}" class="lg:hidden flex flex-col w-full h-full bg-white overflow-y-hidden -translate-y-full fixed opacity-0 transition-opacity ease-in">
+        <div bind:this="{activeMenuContainer}" class="lg:hidden flex flex-col w-full h-full bg-white overflow-y-hidden fixed opacity-0 transition-opacity ease-in">
             <nav class="flex w-full h-32 text-white">
                 <div class="flex w-full justify-end p-12 items-center">
                     <button on:click={() => toggleMobileMenu(activeMenuContainer)}>
