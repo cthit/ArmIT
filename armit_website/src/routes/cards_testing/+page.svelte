@@ -2,7 +2,7 @@
     import Cards from "../../components/Cards.svelte";
 </script>
 
-<section id="cards">
+<section>
     <Cards/>
 </section>
 
