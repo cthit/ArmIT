@@ -1,7 +1,7 @@
 <script>
     import { fade } from 'svelte/transition';
     let visible = false;
-
+    
     function openMobileMenu(){
         document.body.classList.toggle("overflow-hidden");
         visible = true;
@@ -11,7 +11,6 @@
         visible = false;
         document.body.classList.toggle("overflow-hidden");
     }
-
 </script>
 
 <div class="flex flex-col h-auto w-full max-w-full max-h-full">
