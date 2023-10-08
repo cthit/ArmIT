@@ -1,20 +1,17 @@
 <script>
-    let activeMenuContainer;
+    import { fade } from 'svelte/transition';
+    let visible = false;
+
     function openMobileMenu(){
-        activeMenuContainer.classList.toggle("-translate-x-full");
-        setTimeout(() => {
-            activeMenuContainer.classList.toggle("opacity-100");
-            document.body.classList.toggle("overflow-hidden");
-        }, 150); 
+        document.body.classList.toggle("overflow-hidden");
+        visible = true;
     }
 
     function closeMobileMenu(){
-        activeMenuContainer.classList.toggle("opacity-100");
+        visible = false;
         document.body.classList.toggle("overflow-hidden");
-        setTimeout(() => {
-            activeMenuContainer.classList.toggle("-translate-x-full");
-        }, 150);
     }
+
 </script>
 
 <div class="flex flex-col h-auto w-full max-w-full max-h-full">
@@ -71,7 +68,8 @@
                 </div>
             </header>
         </div>
-        <div bind:this="{activeMenuContainer}" class="lg:hidden -translate-x-full flex flex-col w-full h-full bg-white overflow-y-hidden fixed opacity-0 transition-all delay-150 ease-in">
+        {#if visible}
+        <div transition:fade ={{duration: 150}} class="lg:hidden flex flex-col w-full h-full bg-white overflow-y-hidden fixed">
             <nav class="flex w-full h-32 text-white">
                 <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
                     <a href="/" class="flex shrink-0 items-center">
@@ -110,6 +108,7 @@
                 </div>
             </header>
         </div>
+        {/if}
     </div>
     <div class="flex w-full h-80">
         test
