@@ -24,9 +24,6 @@ export default {
         'header': "url('/header4.png/')",
         'header-mobile': "url('header_phone.png/')",
       },
-      spacing: {
-          'double': '200%',
-      },
     }
   },
   plugins: []
