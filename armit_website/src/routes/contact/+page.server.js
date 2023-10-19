@@ -1,6 +1,8 @@
 import { fail } from "@sveltejs/kit"
 import { z } from "zod"
-import { superValidate } from "sveltekit-superforms/server"
+import { superValidate, message } from "sveltekit-superforms/server"
+
+
 
 const newContactSchema = z.object({
     company: z.string().min(1),
@@ -28,12 +30,17 @@ export const actions = {
     // },
     sendEmail: async ({ request }) => {
         const form = await superValidate(request, newContactSchema);
-        console.log(form.data.company)
-        console.log(form.data.name)
-        console.log(form.data.email)
-        console.log(form.data.phone)
-        console.log(form.data.message)
+        console.log(form)
         
+        
+        if (!form.valid) {
+        // Again, return { form } and things will just work.
+        return fail(400, { form });
+        }
+
+        // TODO
+        
+        return message(form, "Thanks for reaching out!" );
     }
   };
 
