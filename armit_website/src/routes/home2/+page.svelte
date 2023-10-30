@@ -58,9 +58,9 @@
                                 Trusted by 
                             </h3>
                             <div class="flex items-center lg:justify-start justify-center w-full gap-12">
-                                <img class="h-auto w-1/3 md:w-1/6 max-h-full" alt="Centiro" src="/Centiro_logo.png"/>
-                                <img class="h-auto w-1/3 md:w-1/6 max-h-full" alt="Opera" src="/Opera_GX_logo.png"/>
-                                <img class="h-auto w-1/3 md:w-1/6 max-h-full mb-6" alt="Accenture" src="/Accenture_logo.png"/>
+                                <img class="h-auto w-2/5 md:w-1/6 max-h-full" alt="Centiro" src="/Centiro_logo.png"/>
+                                <img class="h-auto w-2/5 md:w-1/6 max-h-full" alt="Opera" src="/Opera_GX_logo.png"/>
+                                <img class="h-auto w-2/5 md:w-1/6 max-h-full mb-6" alt="Accenture" src="/Accenture_logo.png"/>
                             </div>
                         </div> 
                     </div>
@@ -68,7 +68,7 @@
             </header>
         </div>
         {#if visible}
-        <div transition:fade ={{duration: 150}} class="lg:hidden flex flex-col w-full h-full bg-white overflow-y-hidden fixed">
+        <div transition:fade ={{duration: 150}} class="lg:hidden flex flex-col w-full h-full bg-white fixed">
             <nav class="flex w-full h-32 text-white">
                 <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
                     <a href="/" class="flex shrink-0 items-center">
