@@ -52,15 +52,15 @@
                     <div class="row-span-3 lg:flex hidden items-center">
                         <img class="w-auto h-auto z-10" alt="Smurf" src="/smurf.png/"/>
                     </div>
-                    <div class="flex bg-white col-span-2 items-center">
+                    <div class="flex bg-[#C6ECFF] col-span-2 items-center">
                         <div class="flex flex-col flex-grow justify-center lg:justify-end lg:text-start text-center lg:pl-40 w-full lg:px-0 px-4 text-navtext 2xl:text-2xl lg:text-xl">
                             <h3 class="mt-2">
                                 Trusted by 
                             </h3>
                             <div class="flex items-center lg:justify-start justify-center w-full gap-12">
-                                <img class="h-auto w-2/5 md:w-1/6 max-h-full" alt="Centiro" src="/Centiro_logo.png"/>
-                                <img class="h-auto w-2/5 md:w-1/6 max-h-full" alt="Opera" src="/Opera_GX_logo.png"/>
-                                <img class="h-auto w-2/5 md:w-1/6 max-h-full mb-6" alt="Accenture" src="/Accenture_logo.png"/>
+                                <img class="h-auto w-1/3 md:w-1/6 max-h-full" alt="Centiro" src="/Centiro_logo.png"/>
+                                <img class="h-auto w-1/3 md:w-1/6 max-h-full" alt="Opera" src="/Opera_GX_logo.png"/>
+                                <img class="h-auto w-1/3 md:w-1/6 max-h-full mb-6" alt="Accenture" src="/Accenture_logo.png"/>
                             </div>
                         </div> 
                     </div>
@@ -68,7 +68,7 @@
             </header>
         </div>
         {#if visible}
-        <div transition:fade ={{duration: 150}} class="lg:hidden flex flex-col w-full h-full bg-white fixed">
+        <div transition:fade ={{duration: 150}} class="lg:hidden flex flex-col w-full h-full bg-white overflow-y-hidden fixed">
             <nav class="flex w-full h-32 text-white">
                 <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
                     <a href="/" class="flex shrink-0 items-center">
