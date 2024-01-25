@@ -13,7 +13,7 @@
                 md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1240px]
                 gap-x-[50px] gap-y-[50px]">
     
-    <!-- First Card -->
+    <!-- Lunch Seminars 1st -->
     <div class="relative bg-[#1F43FF] overflow-hidden rounded-3xl
                 w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
                 duration-500 hover:scale-110 hover:shadow-xl">
@@ -36,14 +36,14 @@
         </a>
     </div>
 
-    <!-- Second Card -->
+    <!-- Hackatons 2nd -->
     <div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
                 w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
                 duration-500 hover:scale-110 hover:shadow-xl">
         
         <a href="/" draggable="false" class="flex-1">
-            <div class="z-0 absolute bottom-0">
-                <img src="/bg_hackatons.png" alt="" class="max-w-full"/>
+            <div class="z-0 absolute bottom-0 w-full">
+                <img src="/bg_hackatons.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
             <img draggable="false"  src="{data.products[1].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
@@ -60,134 +60,74 @@
     </div>
 
     
-    <!-- Placeholders below -->
-    <div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
+    <!-- Digital Events 7th -->
+    <div class="relative bg-[#463C4B] overflow-hidden rounded-3xl
                 w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
                 duration-500 hover:scale-110 hover:shadow-xl">
         
         <a href="/" draggable="false" class="flex-1">
-            <div class="z-0 absolute bottom-0">
-                <img src="/bg_hackatons.png" alt="" class="max-w-full"/>
+            <div class="z-0 absolute bottom-0 w-full">
+                <img src="/bg_digitalevents.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
-            <img draggable="false"  src="{data.products[1].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
+            <img draggable="false"  src="{data.products[4].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
 
             <div class="relative text-center mx-auto px-4 mb-2 -mt-4 
                         w-full h-fit">
-                <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].itemName}</p>
+                <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[4].itemName}</p>
                 
                 <div class="text-left items-center line-clamp-4">
-                    <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].description}</p>
+                    <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[4].description}</p>
                 </div>
             </div>
         </a>
     </div>
-    <div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
+
+    <!-- Marketing 3rd -->
+    <div class="relative bg-[#361497] overflow-hidden rounded-3xl
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
 
-<a href="/" draggable="false" class="flex-1">
-<div class="z-0 absolute bottom-0">
-    <img src="/bg_hackatons.png" alt="" class="max-w-full"/>
-</div>
-
-<img draggable="false"  src="{data.products[1].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
-
-<div class="relative text-center mx-auto px-4 mb-2 -mt-4 
-            w-full h-fit">
-    <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].itemName}</p>
-    
-    <div class="text-left items-center line-clamp-4">
-        <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].description}</p>
-    </div>
-</div>
-</a>
-</div>
-<div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
-                w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
-                duration-500 hover:scale-110 hover:shadow-xl">
-        
         <a href="/" draggable="false" class="flex-1">
-            <div class="z-0 absolute bottom-0">
-                <img src="/bg_hackatons.png" alt="" class="max-w-full"/>
+            <div class="z-0 absolute bottom-0 w-full">
+                <img src="/bg_marketing.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
-            <img draggable="false"  src="{data.products[1].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
+            <img draggable="false"  src="{data.products[2].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
 
             <div class="relative text-center mx-auto px-4 mb-2 -mt-4 
                         w-full h-fit">
-                <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].itemName}</p>
+                <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[2].itemName}</p>
                 
                 <div class="text-left items-center line-clamp-4">
-                    <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].description}</p>
+                    <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[2].description}</p>
                 </div>
             </div>
         </a>
     </div>
-    <div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
+
+    <!-- Study Breakfast 6th -->
+    <div class="relative bg-[#FFFA87] overflow-hidden rounded-3xl
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
-
-<a href="/" draggable="false" class="flex-1">
-<div class="z-0 absolute bottom-0">
-    <img src="/bg_hackatons.png" alt="" class="max-w-full"/>
-</div>
-
-<img draggable="false"  src="{data.products[1].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
-
-<div class="relative text-center mx-auto px-4 mb-2 -mt-4 
-            w-full h-fit">
-    <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].itemName}</p>
     
-    <div class="text-left items-center line-clamp-4">
-        <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].description}</p>
-    </div>
-</div>
-</a>
-</div>
-<div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
-                w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
-                duration-500 hover:scale-110 hover:shadow-xl md:hidden lg:block">
-        
         <a href="/" draggable="false" class="flex-1">
-            <div class="z-0 absolute bottom-0">
-                <img src="/bg_hackatons.png" alt="" class="max-w-full"/>
+            <div class="z-0 absolute bottom-0 w-full">
+                <img src="/bg_breakfast.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
-            <img draggable="false"  src="{data.products[1].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
+            <img draggable="false"  src="{data.products[3].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
 
             <div class="relative text-center mx-auto px-4 mb-2 -mt-4 
                         w-full h-fit">
-                <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].itemName}</p>
+                <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[3].itemName}</p>
                 
                 <div class="text-left items-center line-clamp-4">
-                    <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].description}</p>
+                    <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[3].description}</p>
                 </div>
             </div>
         </a>
     </div>
-    <div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
-    w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
-    duration-500 hover:scale-110 hover:shadow-xl md:hidden lg:block">
-
-<a href="/" draggable="false" class="flex-1">
-<div class="z-0 absolute bottom-0">
-    <img src="/bg_hackatons.png" alt="" class="max-w-full"/>
-</div>
-
-<img draggable="false"  src="{data.products[1].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
-
-<div class="relative text-center mx-auto px-4 mb-2 -mt-4 
-            w-full h-fit">
-    <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].itemName}</p>
-    
-    <div class="text-left items-center line-clamp-4">
-        <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[1].description}</p>
-    </div>
-</div>
-</a>
-</div>
-
     
 </section> 
 

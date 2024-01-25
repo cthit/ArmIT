@@ -19,13 +19,28 @@
             "extras":[{"type": "photoshoot", "price":"1000"}]
         },
         {
-            "itemName": "not set",
-            "description": "Engage your audience in a hands-on event where  learning together plays an important role",
+            "itemName": "Marketing",
+            "description": "We offer a broad variety of marketing solutions - all tailored to your specific needs",
             "capacity": "not set",
             "time":"not set",
-            "price": "not decided",
-            "iconPath": "/",
-            "extras":[{"type": "photoshoot", "price":"1000"}]
+            "price": "not set",
+            "iconPath": "/icon_marketing.png"
+        },
+        {
+            "itemName": "Study Breakfast",
+            "description": "Team up with IT's educational committee and contribute a snack to better prepare our students for exam periods",
+            "capacity": "not set",
+            "time":"not set",
+            "price": "not set",
+            "iconPath": "/icon_breakfast.png"
+        },
+        {
+            "itemName": "Digital Events",
+            "description": "Connect with your audience through a digital meeting!",
+            "capacity": "not set",
+            "time":"not set",
+            "price": "not set",
+            "iconPath": "/icon_digitalmarketing.png"
         }
     ]
 }

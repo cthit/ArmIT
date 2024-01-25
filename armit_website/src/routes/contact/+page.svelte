@@ -19,14 +19,14 @@
 
 </script>
 
-<div
-    class="sm:hidden md:hidden lg:flex
+<body
+    class="sm:hidden md:flex lg:flex
             flex justify-center items-center full-image-bg
-            w-screen h-screen"
+            w-screen h-full overflow-scroll"
 >
     <div
         class="grid grid-cols-2 justify-items-center align-middle backdrop-blur-md bg-black/60 rounded-[75px]
-                w-[90%] h-[90%] overflow-y-scroll scroll-smooth"
+                w-[90%] min-h-screen max-h-full scroll-smooth"
     >
         <!-- GRID 1 - CONTACT INFORMATION -->
         <div class="block w-[85%] h-[85%] self-center">
@@ -80,31 +80,31 @@
         </div>
 
         <!-- GRID 2 - CONTACT FORM -->
-        <div class="flex justify-center mx-auto w-[85%] h-[85%] self-center overflow-y-scroll scroll-smooth">
+        <div class="flex justify-center mx-auto w-[85%] h-[85%] mb-12 self-center scroll-smooth">
             <div class="w-[100%] h-[100%]">
                 <div class=" mr-2 w-[85%] h-[100%] float-right">
                     {#if !$message}
-                    <img class="mx-auto max-h-[100px]" src="/ArmITLogo_plain.png" alt="ArmIT logo" draggable="false">
+                    <img class="mx-auto md:h-[50px] lg:h-[100px] max-h-[100px]" src="/ArmITLogo_plain.png" alt="ArmIT logo" draggable="false">
                     <!-- <SuperDebug data={$form} /> -->
                     
                     <form use:enhance  id="contactForm" class="flex flex-col" method="POST" action="?/sendEmail" autocomplete="off">
-                        <label class="form-label" for="company">*Company</label>
-                        <input class="form-input outline-0 focus:outline-white/10 focus:outline-1" 
+                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="company">*Company</label>
+                        <input class="form-input md:text-[12px] md:h-[20px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
                         type="text" name="company" required autocomplete="off" bind:value={$form.company} />
 
-                        <label class="form-label" for="name">*Name</label>
-                        <input class="form-input outline-0 focus:outline-white/10 focus:outline-1" 
+                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="name">*Name</label>
+                        <input class="form-input md:text-[12px] md:h-[20px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
                         type="text" name="name" required autocomplete="off" bind:value={$form.name} />
                       
-                        <label class="form-label" for="email">*E-mail</label>
-                        <input class="form-input outline-0 focus:outline-white/10 focus:outline-1" 
+                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="email">*E-mail</label>
+                        <input class="form-input md:text-[12px] md:h-[20px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
                         type="email" name="email" required autocomplete="off" bind:value={$form.email} />
 
-                        <label class="form-label" for="phone">Phone number</label>
-                        <input class="form-input outline-0 focus:outline-white/10 focus:outline-1" 
+                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="phone">Phone number</label>
+                        <input class="form-input md:text-[12px] md:h-[20px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
                         type="tel" name="phone" autocomplete="off" bind:value={$form.phone} />
                         
-                        <label class="form-label" for="message">Message</label>
+                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="message">Message</label>
                         <textarea class="leading-normal resize-none h-32 form-input outline-0 focus:outline-white/10 focus:outline-1" 
                         type="text" name="message" autocomplete="off" bind:value={$form.message} />
 
@@ -138,9 +138,10 @@
             </div>
         </div>
     </div>
-</div>
+</body>
 
 <style lang="postcss">
+  
     .full-image-bg {
         background-image: url("bg_contact.jpg");
         background-size: cover;
@@ -164,10 +165,9 @@
         text-white/75
         mb-6 
         leading-tight 
-
+        
         bg-[#373737]/50
         backdrop-blur-lg
-
     ;
     }
 </style>
