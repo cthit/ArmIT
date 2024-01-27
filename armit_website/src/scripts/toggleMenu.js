@@ -1,11 +1,11 @@
-export let visible = false;
-    
+import { menuToggler } from "../store/menuStore"
+
 export function openMobileMenu(){
     document.body.classList.toggle("overflow-hidden");
-    visible = true;
+    menuToggler.set(true);
 }
 
 export function closeMobileMenu(){
-    visible = false;
+    menuToggler.set(false);
     document.body.classList.toggle("overflow-hidden");
 }

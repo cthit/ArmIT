@@ -1,9 +1,5 @@
 <script>
-    import {menuToggler} from "../store/menuStore"
-    function openMobileMenu(){
-        document.body.classList.toggle("overflow-hidden");
-        menuToggler.set(true);
-    }
+    import { openMobileMenu } from "../scripts/toggleMenu"
 </script>
 
 <div class="flex flex-col w-full h-screen bg-no-repeat bg-cover lg:bg-header bg-header-mobile absolute overflow-hidden" id="menu">
@@ -44,16 +40,43 @@
                 <img class="w-auto h-auto z-10" alt="Smurf" src="/smurf.png/"/>
             </div>
             <div class="flex bg-[#C6ECFF] col-span-2 items-center">
-                <div class="flex flex-col flex-grow justify-center lg:justify-end lg:text-start text-center lg:pl-40 w-full lg:px-0 px-4 text-navtext 2xl:text-2xl lg:text-xl">
-                    <h3 class="mt-2">
+                <div class="flex flex-col justify-center lg:justify-end lg:text-start text-center lg:pl-40 w-full lg:px-0 px-4 text-navtext 2xl:text-2xl lg:text-xl">
+                    <h3>
                         Trusted by 
                     </h3>
-                    <div class="flex items-center lg:justify-start justify-center w-full gap-12">
-                        <img class="h-auto w-1/3 md:w-1/6 max-h-full" alt="Centiro" src="/Centiro_logo.png"/>
-                        <img class="h-auto w-1/3 md:w-1/6 max-h-full" alt="Opera" src="/Opera_GX_logo.png"/>
-                        <img class="h-auto w-1/3 md:w-1/6 max-h-full mb-6" alt="Accenture" src="/Accenture_logo.png"/>
+                    <div class="w-full max-w-5xl px-4 md:px-6">
+                        <div class="w-3/4 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_48px,_black_calc(100%-48px),transparent_100%)] lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_96px,_black_calc(100%-96px),transparent_100%)]">
+                            <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                                <li>
+                                    <img src="./accenture.svg" alt="Accenture"/>
+                                </li>
+                                <li>
+                                    <img class="w-[192px] h-auto" alt="Centiro" src="/Centiro_logo.png"/>
+                                </li>
+                                <li>
+                                    <img class="w-[128px] h-auto" alt="Cygni" src="/Cygni_logo.png"/>
+                                </li>
+                                <li>
+                                    <img class="w-[192px] h-auto" alt="Opera" src="/Opera_GX_logo.png"/>
+                                </li>
+                            </ul>    
+                            <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                                <li>
+                                    <img src="./accenture.svg" alt="Accenture"/>
+                                </li>
+                                <li>
+                                    <img class="w-[192px] h-auto" alt="Centiro" src="/Centiro_logo.png"/>
+                                </li>
+                                <li>
+                                    <img class="w-[128px] h-auto" alt="Cygni" src="/Cygni_logo.png"/>
+                                </li>
+                                <li>
+                                    <img class="w-[192px] h-auto" alt="Opera" src="/Opera_GX_logo.png"/>
+                                </li>
+                            </ul>               
+                        </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </header>

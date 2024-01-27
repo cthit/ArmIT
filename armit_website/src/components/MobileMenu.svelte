@@ -1,10 +1,6 @@
 <script>
     import { fade } from 'svelte/transition';
-    import { menuToggler } from "../store/menuStore"
-    function closeMobileMenu(){
-        menuToggler.set(false);
-        document.body.classList.toggle("overflow-hidden");
-    }   
+    import { closeMobileMenu } from "../scripts/toggleMenu"
 </script>
 
 <div transition:fade ={{duration: 150}} class="lg:hidden flex flex-col w-full h-full bg-white overflow-y-hidden fixed">

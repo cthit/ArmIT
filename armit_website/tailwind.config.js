@@ -24,6 +24,15 @@ export default {
         'header': "url('/header4.png/')",
         'header-mobile': "url('header_phone.png/')",
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 15s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },
     }
   },
   plugins: []
