@@ -5,7 +5,7 @@
 <div class="flex flex-col w-full h-screen bg-no-repeat bg-cover lg:bg-header bg-header-mobile absolute overflow-hidden" id="menu">
     <nav class="flex w-full h-32 text-white">
         <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
-            <a href="/" class="flex shrink-0 items-center" draggable="false">
+            <a href="/home" class="flex shrink-0 items-center" draggable="false">
                 <img class="lg:h-28 h-24" alt="ArmIT Logo" src="/ArmITLogo_plain.png" draggable="false"/>
             </a>
         </div>
@@ -32,7 +32,7 @@
                         The corporate relations committee for IT students in Chalmers
                     </div>
                     <div class="flex w-full md:text-start lg:justify-start justify-center items-center">
-                        <a href="/" class="flex justify-center px-8 py-3 pb-4 lg:w-1/3 w-2/5 leading-none drop-shadow-xl hover:bg-[#EDEDED] transition-all bg-white text-navtext lg:mt-0 rounded-lg" draggable="false">Our services</a>
+                        <a href="#services" class="flex justify-center px-8 py-3 pb-4 lg:w-1/3 w-2/5 leading-none drop-shadow-xl hover:bg-[#EDEDED] transition-all bg-white text-navtext lg:mt-0 rounded-lg" draggable="false">Our services</a>
                     </div>
                 </div>
             </div>
