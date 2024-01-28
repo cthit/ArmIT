@@ -5,15 +5,15 @@
 <div class="flex flex-col w-full h-screen bg-no-repeat bg-cover lg:bg-header bg-header-mobile absolute overflow-hidden" id="menu">
     <nav class="flex w-full h-32 text-white">
         <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
-            <a href="/" class="flex shrink-0 items-center">
-                <img class="lg:h-28 h-24" alt="ArmIT Logo" src="/ArmITLogo_plain.png"/>
+            <a href="/" class="flex shrink-0 items-center" draggable="false">
+                <img class="lg:h-28 h-24" alt="ArmIT Logo" src="/ArmITLogo_plain.png" draggable="false"/>
             </a>
         </div>
         <div class="flex-grow justify-end p-12 gap-20 items-center text-xl m-0 font-inter lg:flex hidden">
-            <a href="/" class="hover:opacity-50 transition-opacity drop-shadow-lg ">Services</a>
-            <a href="#" class="hover:opacity-50 transition-opacity drop-shadow-lg">Team</a>
-            <a href="https://date-it.se/" target="_blank" class="hover:opacity-50 transition-opacity drop-shadow-lg">DatE-IT</a>
-            <a href="#" class="px-8 py-3 drop-shadow-xl leading-none bg-navtext hover:bg-nav transition-all lg:mt-0 rounded-lg">Contact</a>
+            <a href="#services" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">Services</a>
+            <a href="#" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">Team</a>
+            <a href="https://date-it.se/" target="_blank" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">DatE-IT</a>
+            <a href="#" class="px-8 py-3 drop-shadow-xl leading-none bg-[#060928] hover:bg-nav transition-all lg:mt-0 rounded-lg" draggable="false">Contact</a>
         </div>
         <div class="flex-grow justify-end p-12 items-center lg:hidden flex">
             <button on:click={() => openMobileMenu()}>
@@ -24,23 +24,23 @@
     <header class="max-h-full h-full overflow-hidden flex font-inter text-white">
         <div class="grid grid-rows-3 grid-cols-2 w-full h-full">
             <div class="flex row-span-3 lg:col-span-1 col-span-2 justify-center items-center">
-                <div class="flex flex-grow justify-end flex-col gap-4 w-full lg:pl-40">
-                    <div class="flex 2xl:text-7xl text-4xl lg:justify-start lg:text-start text-center justify-center">
-                        Chalmers' IT Corporate Relations Committee
+                <div class="flex flex-grow justify-end flex-col gap-6  w-full lg:pl-64">
+                    <div class="flex 2xl:text-8xl text-6xl lg:justify-start lg:text-start text-center justify-center font-bold">
+                       We are ArmIT
                     </div>
-                    <div class="flex md:text-2xl text-xl lg:justify-start lg:text-start text-center justify-center">
-                        Building meaningful connections that bridge the corporate-student divide
+                    <div class="flex md:text-2xl text-xl lg:justify-start lg:w-96 w-full lg:text-start text-center justify-center">
+                        The corporate relations committee for IT students in Chalmers
                     </div>
-                    <div class="flex w-full md:text-start lg:justify-start justify-center">
-                        <a href="/" class="flex justify-center px-8 py-3 w-1/3 leading-none drop-shadow-xl hover:bg-[#EDEDED] transition-all bg-white text-navtext lg:mt-0 rounded-md">Our services</a>
+                    <div class="flex w-full md:text-start lg:justify-start justify-center items-center">
+                        <a href="/" class="flex justify-center px-8 py-3 pb-4 lg:w-1/3 w-2/5 leading-none drop-shadow-xl hover:bg-[#EDEDED] transition-all bg-white text-navtext lg:mt-0 rounded-lg" draggable="false">Our services</a>
                     </div>
                 </div>
             </div>
             <div class="row-span-3 lg:flex hidden items-center">
-                <img class="w-auto h-auto z-10" alt="Smurf" src="/smurf.png/"/>
+                <img class="w-auto pb-8 h-auto z-10" alt="Smurf" src="/smurf.png/" draggable="false"/>
             </div>
-            <div class="flex bg-[#C6ECFF] col-span-2 items-center">
-                <div class="flex flex-col justify-center lg:justify-end lg:text-start text-center lg:pl-40 w-full lg:px-0 px-4 text-navtext 2xl:text-2xl lg:text-xl">
+            <div class="flex bg-transparent col-span-2 items-center">
+                <div class="flex flex-col justify-center lg:justify-end lg:text-start text-center lg:pl-64 gap-2 w-full lg:px-0 px-4 text-navtext 2xl:text-2xl lg:text-xl">
                     <h3>
                         Trusted by 
                     </h3>

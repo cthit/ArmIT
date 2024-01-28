@@ -15,8 +15,8 @@
     </div>
 </div>
 
-<style lang="postcss">
+<!-- <style lang="postcss">
     :global(html) {
         @apply bg-blue-200;
     }
-</style>
+</style> -->
