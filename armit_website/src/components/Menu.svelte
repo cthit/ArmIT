@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="row-span-3 lg:flex hidden items-center">
-                <img class="w-auto pb-8 h-auto z-10" alt="Smurf" src="/smurf.png/" draggable="false"/>
+                <img class="w-auto pb-12 h-auto z-10" alt="Smurf" src="/smurf.png/" draggable="false"/>
             </div>
             <div class="flex bg-transparent col-span-2 items-center">
                 <div class="flex flex-col justify-center lg:justify-end lg:text-start text-center lg:pl-64 gap-2 w-full lg:px-0 px-4 text-navtext 2xl:text-2xl lg:text-xl">

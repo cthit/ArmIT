@@ -27,12 +27,13 @@
         {/if}  
     </div>
     <Divider/>
-    <div class="flex flex-col gap-10 justify-center w-full h-screen">
+    <!-- <div class="flex flex-col gap-10 justify-center w-full h-screen">
         <div class="flex justify-center item-center font-inter font-bold text-5xl lg:text-6xl text-[#1F1F3A]">
             Our services
         </div>
         <Cards/>
-    </div>
+    </div> -->
+    <Cards/>
     <OurCoreValues/>
     <div class="flex w-full h-screen">
         <Partners/>
