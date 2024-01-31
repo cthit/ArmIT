@@ -41,6 +41,14 @@
             "time":"not set",
             "price": "not set",
             "iconPath": "/icon_digitalmarketing.png"
+        },
+        {
+            "itemName": "Give Out Merch",
+            "description": "Send us your merch! Text text text",
+            "capacity": "not set",
+            "time":"not set",
+            "price": "not set",
+            "iconPath": "/icon_sponsored.png"
         }
     ]
 }
