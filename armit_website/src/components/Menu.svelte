@@ -13,7 +13,7 @@
             <a href="#services" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">Services</a>
             <a href="#" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">Team</a>
             <a href="https://date-it.se/" target="_blank" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">DatE-IT</a>
-            <a href="#" class="px-8 py-3 drop-shadow-xl leading-none bg-[#060928] hover:bg-nav transition-all lg:mt-0 rounded-lg" draggable="false">Contact</a>
+            <a href="/contact" class="px-8 py-3 drop-shadow-xl leading-none bg-[#060928] hover:bg-nav transition-all lg:mt-0 rounded-full" draggable="false">Contact</a>
         </div>
         <div class="flex-grow justify-end p-12 items-center lg:hidden flex">
             <button on:click={() => openMobileMenu()}>
@@ -32,7 +32,7 @@
                         The corporate relations committee for IT students in Chalmers
                     </div>
                     <div class="flex w-full md:text-start lg:justify-start justify-center items-center">
-                        <a href="#services" class="flex justify-center px-8 py-3 pb-4 lg:w-1/3 w-2/5 leading-none drop-shadow-xl hover:bg-[#EDEDED] transition-all bg-white text-navtext lg:mt-0 rounded-lg" draggable="false">Our services</a>
+                        <a href="#services" class="flex justify-center px-8 py-3 pb-4 lg:w-1/3 w-2/5 leading-none drop-shadow-xl hover:bg-[#EDEDED] transition-all bg-white text-navtext lg:mt-0 rounded-full" draggable="false">Our services</a>
                     </div>
                 </div>
             </div>
