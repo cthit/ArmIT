@@ -25,13 +25,17 @@ export default {
         'header-mobile': "url('header_phone.png/')",
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 15s linear infinite',
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
         }
+      },
+      gridTemplateRows: {
+        'cards': 'minmax(200px, 0.1fr) minmax(0, 0.3fr) minmax(0, 1fr)',
+        'cards-mobile': 'minmax(200px, 0.1fr) minmax(0.2fr, 0.3fr) minmax(0.5fr, 1fr)'
       },
     }
   },

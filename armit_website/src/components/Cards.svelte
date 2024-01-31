@@ -8,7 +8,7 @@
 <div class="flex h-screen w-screen items-center justify-center text-center font-semibold text-3xl">Loading Content...</div>
 
 {:then data}
-<section class="mx-auto justify-center justify-items-center 
+<section id="services" class="mx-auto justify-center justify-items-center 
                 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4   
                 md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1240px]
                 gap-x-[50px] gap-y-[50px]">
