@@ -128,6 +128,29 @@
             </div>
         </a>
     </div>
+
+    <!-- Custom Event (Hard coded text, not in product catalogue) -->
+    <div class="relative bg-[#FF6262] overflow-hidden rounded-3xl
+    w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
+    duration-500 hover:scale-110 hover:shadow-xl">
+    
+        <a href="/" draggable="false" class="flex-1">
+            <div class="z-0 absolute bottom-0 w-full">
+                <img src="/customevent_bg.png" alt="" class="max-w-full w-full object-cover"/>
+            </div>
+
+            <img draggable="false"  src="/customevent_icon.png" alt="teacher with whiteboard " class="relative px-4 mx-auto">
+
+            <div class="relative text-center mx-auto px-4 mb-2 -mt-4 
+                        w-full h-fit">
+                <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">Custom Event</p>
+                
+                <div class="text-left items-center line-clamp-4">
+                    <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">Have an idea of your own? We specialize in custom events and will help you bring it to life!</p>
+                </div>
+            </div>
+        </a>
+    </div>
     
 </section> 
 
