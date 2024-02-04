@@ -37,11 +37,11 @@ function next() {
 <section>
     <div class="flex flex-col items-center">
         <!-- Team Cards -->
-        <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center content-center w-4/5 gap-x-8">
+        <div class="mx-auto grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center justify-items-center content-center w-4/5 gap-x-8 gap-y-8">
             {#each displayItems as {name, role, image}}
-            <div class="flex flex-col border-none justify-center" in:slide={{ duration: 400 }} out:fade={{ duration: 400 }}>
+            <div class="max-w-sm flex flex-col border-none justify-center transition" in:slide={{ duration: 400 }} out:fade={{ duration: 400 }}>
                 <img
-                    class="max-w-sm hover:border-t-8 hover:border-l-8 border-blue-500 saturate-0 hover:saturate-100 duration-300" 
+                    class="hover:border-t-8 hover:border-l-8 border-blue-500 saturate-0 hover:saturate-100 duration-300" 
                     src="{image}" 
                     alt="Team member"
                     in:slide={{ x: 200, duration: 500 }}
