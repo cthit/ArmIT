@@ -35,11 +35,13 @@
         </div>
     </div>
 
-    <button class=" flex gap-x-2 rounded-full px-6 py-3 bg-[#1E1D2F] 
-                    hover:scale-110 hover:shadow-md 
-                    transition duration-300
-                    ">
-        <a class="text-white font-semibold text-lg" href="/about">Learn More</a> 
-        <img src="/openInNewTabIcon.png" alt="open in new tab">
-    </button>
+    <a href="/about">
+        <button class=" flex gap-x-2 rounded-full px-6 py-3 bg-[#1E1D2F] 
+                        hover:scale-110 hover:shadow-md 
+                        transition duration-300
+                        ">
+            <p class="text-white font-semibold text-lg">Learn More</p> 
+            <img src="/openInNewTabIcon.png" alt="open in new tab">
+        </button>
+    </a>
 </div>
