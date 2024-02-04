@@ -1,12 +1,7 @@
 <script>
-    import { onDestroy } from 'svelte';
     import { writable } from 'svelte/store';
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
-
-    onDestroy(() => {
-        window.removeEventListener('resize', adjustItemsToShow);
-    });
 
     let people = [
         {name: "Kevin Collins", role: "President", image: "/kevino.png"},
@@ -23,13 +18,15 @@
 
     
     function adjustItemsToShow() {
-        const width = window.innerWidth;
-        if (width < 768) {
-            itemsToShow.set(1); // Small screens
-        } else if (width > 768 && width < 1280) {
-            itemsToShow.set(3); // Medium screens
-        } else {
-            itemsToShow.set(4); // Large screens
+        if (typeof window !== 'undefined') {
+            const width = window.innerWidth;
+            if (width < 768) {
+                itemsToShow.set(1); // Small screens
+            } else if (width >= 768 && width < 1280) {
+                itemsToShow.set(3); // Medium screens
+            } else {
+                itemsToShow.set(4); // Large screens
+            }
         }
     }
 
@@ -86,7 +83,7 @@
     }
 </script>
 
-<section class="bg-gradient-to-br from-cyan-50 to-indigo-100">
+<section class="pt-40">
     <div class="flex flex-col ">
         <div class="text-center">
             <p class="text-5xl font-bold">Meet the Team</p>
@@ -104,7 +101,7 @@
                 class="max-w-sm flex flex-col border-none justify-center transition"
             >
                 <img 
-                    class="object-cover hover:border-t-8 hover:border-l-8 border-blue-500 saturate-0 hover:saturate-100 duration-300" 
+                    class="object-cover hover:border-t-[16px] hover:border-l-[16px] border-blue-500 saturate-0 hover:saturate-100 duration-300" 
                     src="{image}" 
                     alt="Team member"
                 >

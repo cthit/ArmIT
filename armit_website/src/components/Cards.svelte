@@ -176,9 +176,4 @@
     </div>
     
 </section> 
-
-<!-- Remove below button later, should not be in this class -->
-<div class="w-screen justify-items-center text-center font-semibold text-white shadow-cyan-400-2xl mb-20">
-    <button class="mt-8 w-64 h-14 bg-blue-700 duration-500 hover:bg-blue-800 hover:scale-105 rounded-full">See the Full Catalogue</button>
-</div>
 {/await}
