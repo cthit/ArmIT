@@ -1,6 +1,12 @@
 <script>
+    import { onDestroy } from 'svelte';
     import { writable } from 'svelte/store';
     import { fade } from 'svelte/transition';
+    import { onMount } from 'svelte';
+
+    onDestroy(() => {
+        window.removeEventListener('resize', adjustItemsToShow);
+    });
 
     let people = [
         {name: "Kevin Collins", role: "President", image: "/kevino.png"},
@@ -13,12 +19,36 @@
     ]
 
     let currentIndex = writable(0);
+    let itemsToShow = writable(4);
+
+    
+    function adjustItemsToShow() {
+        const width = window.innerWidth;
+        if (width < 768) {
+            itemsToShow.set(1); // Small screens
+        } else if (width > 768 && width < 1280) {
+            itemsToShow.set(3); // Medium screens
+        } else {
+            itemsToShow.set(4); // Large screens
+        }
+    }
+
+    onMount(() => {
+        adjustItemsToShow(); 
+        window.addEventListener('resize', adjustItemsToShow); 
+
+        return () => {
+            // Cleanup listener when component is destroyed
+            window.removeEventListener('resize', adjustItemsToShow);
+        };
+    });
+
     $: displayItems = getDisplayItems();
-    $: $currentIndex, displayItems = getDisplayItems();
+    $: $currentIndex, $itemsToShow, displayItems = getDisplayItems();
 
     function getDisplayItems() {
         let start = $currentIndex % people.length; // Ensure looping
-        let end = start + 4;
+        let end = start + $itemsToShow;
         // If the end exceeds the array length, slice from start to the end of array and from the beginning to the needed count
         if (end > people.length) {
             return [...people.slice(start, people.length), ...people.slice(0, end - people.length)];
@@ -35,9 +65,7 @@
         currentIndex.update(n => (n - 1 + people.length) % people.length);
     }
 
-
-
-    // Touch event handlers
+    // Touch event handlers:
     let touchStartX = 0;
     let touchEndX = 0;
 
@@ -58,14 +86,13 @@
     }
 </script>
 
-<section>
+<section class="bg-gradient-to-br from-cyan-50 to-indigo-100">
     <div class="flex flex-col ">
         <div class="text-center">
             <p class="text-5xl font-bold">Meet the Team</p>
             <p class="text-xl font-semibold text-black/75">Armit consists of 8 students ...</p>
         </div>
         <!-- Team Cards -->
-        
         <div
             on:touchstart={handleTouchStart}
             on:touchmove={handleTouchMove}

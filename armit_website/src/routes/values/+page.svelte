@@ -7,6 +7,6 @@ import OurCoreValues from '../../components/OurCoreValues.svelte';
     <OurCoreValues/>
 </section>
 
-<section class="mt-20">
+<section>
     <MeetTheTeam></MeetTheTeam>
 </section>
