@@ -11,7 +11,7 @@
     </p>
 
     <!-- Below is grid -->
-    <div class="grid md:grid-cols-3 gap-y-8 w-4/5 justify-items-center text-center gap-x-8">
+    <div class="grid md:grid-cols-3 gap-y-8 w-4/5 justify-items-center text-center gap-x-8 md:scale-90 lg:scale-100">
         <div class="flex flex-col items-center max-w-sm">
             <img src="/handshake.png" alt="handshake" draggable="false">
             <p class="text-xl font-bold text-[#1E1D2F]">Establishing Bonds</p>

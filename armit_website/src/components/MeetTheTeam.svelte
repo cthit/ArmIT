@@ -10,12 +10,12 @@
 
     let people = [
         {name: "Kevin Collins", role: "President", image: "/kevino.png"},
-        {name: "Liam Mayor", role: "Vice President", image: "/smurf.png"},
-        {name: "Annelie Hansson", role: "Head of Marketing", image: "/smurf.png"},
-        {name: "Hanna Bahilu", role:"Event Organizer", image: "/smurf.png"},
-        {name: "David Gidlöf Sjökvist", role: "Treasurer", image: "/smurf.png"},
-        {name: "Hannah Tu", role: "Head of Logistics", image: "/smurf.png"},
-        {name: "Mikael Motin", role:"Business Contact", image: "/smurf.png"}
+        {name: "Liam Mayor", role: "Vice President", image: "/ArmITLogo_smurf.png"},
+        {name: "Annelie Hansson", role: "Head of Marketing", image: "/ArmITLogo_smurf.png"},
+        {name: "Hanna Bahilu", role:"Event Organizer", image: "/ArmITLogo_smurf.png"},
+        {name: "David Gidlöf Sjökvist", role: "Treasurer", image: "/ArmITLogo_smurf.png"},
+        {name: "Hannah Tu", role: "Head of Logistics", image: "/ArmITLogo_smurf.png"},
+        {name: "Mikael Motin", role:"Business Contact", image: "/ArmITLogo_smurf.png"}
     ]
 
     let currentIndex = writable(0);
@@ -97,14 +97,14 @@
             on:touchstart={handleTouchStart}
             on:touchmove={handleTouchMove}
             on:touchend={handleTouchEnd} 
-            class="mx-auto grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center justify-items-center content-center w-4/5 gap-x-8 gap-y-8">
+            class=" scale-90 mx-auto grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center justify-items-center content-center w-4/5 gap-x-20 gap-y-8">
             {#each displayItems as {name, role, image}, index (name + role + index)}
             <div    
                 in:fade={{ duration: 500 }} 
                 class="max-w-sm flex flex-col border-none justify-center transition"
             >
                 <img 
-                    class="hover:border-t-8 hover:border-l-8 border-blue-500 saturate-0 hover:saturate-100 duration-300" 
+                    class="object-cover hover:border-t-8 hover:border-l-8 border-blue-500 saturate-0 hover:saturate-100 duration-300" 
                     src="{image}" 
                     alt="Team member"
                 >
