@@ -21,7 +21,7 @@
     </div>
     <div class="flex flex-col gap-10 justify-center text-center items-center text-[#1F1F3A] w-full">
         <div class="text-5xl lg:text-7xl font-inter font-bold">Want to get in touch?</div>
-            <form class="lg:grid hidden grid-cols-2 gap-4 rounded-3xl border-2 border-[#1F1F3A] h-14 w-1/4">
+            <form class="xl:grid hidden grid-cols-2 gap-4 rounded-3xl border-2 border-[#1F1F3A] h-14 w-1/4">
                 <div class="flex justify-center items-center pl-4 text-[#979797]">
                     <input class="bg-transparent text-center" placeholder="email@example.com" type="email" id="e-mail" name="e-mail"><br><br>
                 </div>

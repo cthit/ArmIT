@@ -19,7 +19,7 @@
     });
 </script>
 
-<div class="flex flex-col h-auto w-full max-w-full max-h-full">
+<div class="flex flex-col h-auto w-full max-w-full max-h-full overflow-hidden overscroll-contain">
     <div class="flex w-full h-screen">
         <Menu/>
         {#if visible}
