@@ -12,5 +12,17 @@
   }
 
 html{
-  scroll-behavior:smooth
+  scroll-behavior: smooth;
+}
+
+#team-images:hover > .team-image{
+  filter: saturate(0)
+}
+
+#team-images:hover > .team-image:hover{
+  filter: saturate(1)
+}
+
+.team-image{
+  transition: filter 300ms ease;
 }

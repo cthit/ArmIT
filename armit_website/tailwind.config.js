@@ -23,6 +23,7 @@ export default {
       backgroundImage: {
         'header': "url('/header4.png/')",
         'header-mobile': "url('header_phone.png/')",
+        'values': "url('/values_background.png/')",
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',

@@ -4,13 +4,13 @@
     import { onMount } from 'svelte';
 
     let people = [
-        {name: "Kevin Collins", role: "President", image: "/kevino.png"},
-        {name: "Liam Mayor", role: "Vice President", image: "/ArmITLogo_smurf.png"},
-        {name: "Annelie Hansson", role: "Head of Marketing", image: "/ArmITLogo_smurf.png"},
-        {name: "Hanna Bahilu", role:"Event Organizer", image: "/ArmITLogo_smurf.png"},
-        {name: "David Gidlöf Sjökvist", role: "Treasurer", image: "/ArmITLogo_smurf.png"},
-        {name: "Hannah Tu", role: "Head of Logistics", image: "/ArmITLogo_smurf.png"},
-        {name: "Mikael Motin", role:"Business Contact", image: "/ArmITLogo_smurf.png"}
+        {name: "Kevin Collins", role: "President", image: "/kevin.png"},
+        {name: "David Gidlöf Sjöquist", role: "Treasurer", image: "/gide.png"},
+        {name: "Liam Mayor", role: "Vice President", image: "/post.png"},
+        {name: "Annelie Hansson", role: "Head of Marketing", image: "/waka.png"},
+        {name: "Hanna Bahilu", role:"Event Organizer", image: "/montana.png"},
+        {name: "Hannah Tu", role: "Head of Logistics", image: "/utarn.png"},
+        {name: "Mikael Motin", role:"Business Contact", image: "/lustig.png"}
     ]
 
     let currentIndex = writable(0);
@@ -84,7 +84,7 @@
 </script>
 
 <section class="pt-20">
-    <div class="flex flex-col ">
+    <div class="flex flex-col justify-center items-center gap-4">
         <div class="text-center">
             <p class="text-5xl font-bold text-[#1F1F3A]">Our Team</p>
             <p class="text-xl font-semibold py-2 text-[#1F1F3A]/90">ArmIT'23 consists of 8 students:</p>
@@ -94,14 +94,14 @@
             on:touchstart={handleTouchStart}
             on:touchmove={handleTouchMove}
             on:touchend={handleTouchEnd} 
-            class=" scale-90 mx-auto grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center justify-items-center content-center w-4/5 gap-x-20 gap-y-8">
+            class=" scale-90 mx-auto grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center justify-items-center content-center w-4/5 gap-x-20 gap-y-8" id="team-images">
             {#each displayItems as {name, role, image}, index (name + role + index)}
             <div    
                 in:fade={{ duration: 500 }} 
-                class="max-w-sm flex flex-col border-none justify-center transition"
+                class="max-w-sm flex flex-col border-none justify-center transition team-image" 
             >
                 <img 
-                    class="object-cover hover:shadow-[-12px_-12px_0_#63B2FF] outline-[#63B2FF] lg:saturate-[0.25] hover:saturate-100 duration-300" 
+                    class="object-cover hover:shadow-[-12px_-12px_0_#63B2FF] outline-[#63B2FF] duration-300" 
                     src="{image}" 
                     alt="Team member"
                 >
@@ -109,16 +109,17 @@
                     <p class="text-2xl font-bold">{name}</p>
                     <p class="text-xl text-[#182E6F] font-bold pb-2">{role}</p>
                     <div class="flex flex-row gap-x-4">
-                        <a href="" class="hover:scale-110 duration-300 max-w-[24px]"><img src="https://cdn0.iconfinder.com/data/icons/basic-uses-symbol-vol-1/100/Call_Phone_Cell_Ring_Pick_up-512.png" alt="phone"></a>
-                        <a href="" class="hover:scale-110 duration-300 max-w-[24px]"><img src="https://www.iconpacks.net/icons/2/free-mail-icon-2569-thumb.png" alt="mail"></a>
-                        <a href="" class="hover:scale-110 duration-300 max-w-[24px]"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="linkedin"></a>
+                        <a href="" class="duration-300 hover:opacity-80 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#182E6F" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+                        <a href="" class="duration-300 hover:opacity-80 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#182E6F" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+                        <a href="" class="duration-300 hover:opacity-80 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" fill="#182E6F" stroke="white" stroke-width="2"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
                     </div>
                 </div>
             </div>
             {/each}
         </div>
-        
+        <div class="flex gap-8">
+            <button on:click={previous}><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left hover:opacity-80 hover:scale-110 transition"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+            <button on:click={next}><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right hover:opacity-80 hover:scale-110 transition"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        </div>
     </div>
-    <button on:click={previous}>PREVIOUS</button>
-    <button on:click={next}>NEXT</button>
 </section>

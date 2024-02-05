@@ -4,39 +4,39 @@
 </script>
 
 <div class="flex flex-col items-center gap-y-8 py-32
-            bg-[#C5E6FF]">
-    <p class="text-5xl font-bold text-center">
+            bg-values">
+    <p class="text-5xl text-white font-bold text-center">
         Our Core Values
     </p>
 
     <!-- Below is grid -->
     <div class="grid md:grid-cols-3 gap-y-8 w-4/5 justify-items-center text-center gap-x-8 md:scale-90 lg:scale-100">
         <div class="flex flex-col items-center max-w-sm">
-            <img src="/handshake.png" alt="handshake" draggable="false">
-            <p class="text-xl font-bold text-[#1F1F3A]">Establishing Bonds</p>
-            <p class="mt-2 text-lg font-bold text-[#1F1F3A]/75">    
+            <img src="/jokey2.png" class="object-contain" alt="handshake" draggable="false">
+            <p class="text-xl font-bold text-white">Establishing Bonds</p>
+            <p class="mt-2 text-lg font-bold text-white/75">    
                 We believe building trust, promoting collaboration and forging meaningful connections are essential parts of success  
             </p>
         </div>
         <div class="flex flex-col items-center max-w-sm">
-            <img src="/head.png" alt="head" draggable="false">
-            <p class="text-xl font-bold text-[#1F1F3A]">Student Benefit</p>
-            <p class="mt-2 text-lg font-bold text-[#1F1F3A]/75">
+            <img src="/smartsmurf.png" alt="head" draggable="false">
+            <p class="text-xl font-bold text-white pt-6">Student Benefit</p>
+            <p class="mt-2 text-lg font-bold text-white/75">
                 Prioritizing student wellness, we aim to craft optimal experiences and curate events that contribute growth and fulfillment
             </p>
         </div>
         <div class="flex flex-col items-center max-w-sm">
-            <img src="/growth.png" alt="growth" draggable="false">
-            <p class="text-xl font-bold text-[#1F1F3A]">Managing Growth</p>
-            <p class="mt-2 text-lg font-bold text-[#1F1F3A]/75">
+            <img src="/handysmurf2.png" alt="growth" draggable="false">
+            <p class="text-xl font-bold text-white">Managing Growth</p>
+            <p class="mt-2 text-lg font-bold text-white/75">
                 We employ strategic planning, offer diversified products, and work with continuous adaptation to maximize growth
             </p>
         </div>
     </div>
 
     <a href="/about">
-        <button class=" flex gap-x-2 rounded-full px-6 py-3 bg-[#1F1F3A] 
-                        hover:scale-110 hover:shadow-md 
+        <button class=" flex gap-x-2 rounded-full px-6 py-3 bg-[#6BBBF8] border-black border-2
+                        hover:opacity-75 shadow-xl hover:scale-110
                         transition duration-300
                         ">
             <p class="text-white font-semibold text-lg">Learn More</p> 
