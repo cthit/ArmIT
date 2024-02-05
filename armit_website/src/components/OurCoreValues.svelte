@@ -3,7 +3,7 @@
 
 </script>
 
-<div class="flex flex-col items-center gap-y-8 pt-8 pb-8
+<div class="flex flex-col items-center gap-y-8 pt-40 pb-40
             bg-[#F8FAFE]
              bg-gradient-to-b from-[#dbe7ff] to-[#F8FAFE]">
     <p class="text-5xl font-bold text-center">

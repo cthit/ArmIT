@@ -62,29 +62,34 @@
 
     <section
         id="services" 
-        class="flex flex-col items-center bg-gradient-to-b from-white to-[#dbe7ff] text-center pt-20 pb-20">
-        <p class="font-bold text-5xl mb-12">Explore Our Products</p>
-        <Cards/>
-        <p class="underline text-lg font-bold text-black/75 mt-8">+ and many more!</p>
-        <a href="https://www.youtube.com/shorts/2p2HTSUF-NA" class="pt-12 pb-20">
-            <button class=" flex gap-x-2 rounded-full px-6 py-4 bg-blue-700 
-                            hover:scale-110 hover:shadow-md hover:bg-blue-800
-                            transition duration-300
-                            ">
+        class="relative flex flex-col items-center bg-white text-center pt-20 pb-20 overflow-hidden">
+        <img class="absolute z-0 top-0 left-0 w-full h-full object-cover" src="/cardsdiamondbg.png" alt="">
+        <p class="font-bold text-5xl mb-12 z-10">Explore Our Products</p>
+        <div class="z-10">
+            <Cards/>
+        </div>
+        <p class="underline text-lg font-bold text-black/75 mt-8 z-10">+ and many more!</p>
+        <a href="https://www.youtube.com/shorts/2p2HTSUF-NA" class="pt-12 pb-20 z-10">
+            <button class="flex gap-x-2 rounded-full px-6 py-4 bg-blue-700 
+                        hover:scale-110 hover:shadow-md hover:bg-blue-800
+                        transition duration-300">
                 <p class="text-white font-semibold text-lg">Browse the Full Catalogue</p> 
                 <img src="/openInNewTabIcon.png" alt="open in new tab">
             </button>
         </a>
     </section>
+
     
-    <section id="values">
+    <section 
+        id="values"
+        class="">
         <!-- possible to change so that background is decided here, instead of in component-->
         <OurCoreValues/>
     </section>
 
     <section 
         id="team"
-        class="bg-gradient-to-b from-[#F8FAFE] to-[#C5E6FF] pt-20 pb-40">
+        class="bg-[#F8FAFE] pt-20 pb-40">
         <MeetTheTeam/>
     </section>
     
