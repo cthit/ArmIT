@@ -62,8 +62,8 @@
 
     <section
         id="services" 
-        class="relative flex flex-col items-center bg-white text-center pt-20 pb-20 overflow-hidden">
-        <img class="absolute z-0 top-0 left-0 w-full h-full object-cover" src="/cardsdiamondbg.png" alt="">
+        class="relative flex flex-col items-center bg-white text-center pt-10 pb-20 overflow-hidden">
+        <!-- <img class="absolute z-0 top-0 left-0 w-full h-full object-cover" src="/cardsdiamondbg.png" alt=""> -->
         <p class="font-bold text-5xl mb-12 z-10">Explore Our Products</p>
         <div class="z-10">
             <Cards/>
@@ -89,7 +89,7 @@
 
     <section 
         id="team"
-        class="bg-[#F8FAFE] pt-20 pb-40">
+        class="bg-[#FFF] pb-40">
         <MeetTheTeam/>
     </section>
     

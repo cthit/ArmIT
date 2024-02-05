@@ -1,21 +1,21 @@
 <div class="grid grid-rows-cards-mobile lg:grid-rows-cards bg-gradient-to-b from-[#C5E6FF] to-[#FFF] w-full h-full">
     <div class="flex justify-center items-center font-inter font-bold text-5xl lg:text-6xl text-[#1F1F3A]">
-        Our partners
+        Our Partners
     </div>
     <div class="flex h-full w-full px-8 lg:px-12">
         <div class="grid lg:grid-cols-4 lg:grid-rows-1 grid-cols-2 grid-rows-2 lg:gap-8 gap-4 [&_a]:bg-white [&_a]:w-auto [&_a]:drop-shadow-lg [&_a]:transition-opacity [&_a]:rounded-lg [&_a]:h-full w-full h-full">
             <a href="https://www.accenture.com" class="flex justify-center items-center pb-8 hover:opacity-80" draggable="false">
-                <img src="./accenture.svg" class="lg:w-[300px] w-[200px]" alt="Accenture"/>
+                <img src="./accenture.svg" class="object-contain" alt="Accenture"/>
             </a>
             <a href="https://www.centiro.com/" class="flex flex-col gap-4 justify-center items-center hover:opacity-80" draggable="false">
-                <img class="lg:w-[300px] w-[160px] h-auto" alt="Centiro" src="/Centiro_logo.png"/>
+                <img class="object-contain px-4" alt="Centiro" src="/Centiro_logo.png"/>
                 Main partner
             </a>
             <a href="https://cygni.se/" class="flex justify-center items-center hover:opacity-80" draggable="false">
-                <img class="lg:w-[200px] w-[120px] h-auto" alt="Cygni" src="/Cygni_logo.png"/>
+                <img class="object-contain md:px-6 xl:px-24" alt="Cygni" src="/Cygni_logo.png"/>
             </a>
             <a href="https://www.opera.com" class="flex justify-center items-center hover:opacity-80" draggable="false">
-                <img class="lg:w-[300px] w-[160px] h-auto" alt="Opera" src="/Opera_GX_logo.png"/>
+                <img class="object-contain px-2 h-auto" alt="Opera" src="/Opera_GX_logo.png"/>
             </a>
         </div> 
     </div>

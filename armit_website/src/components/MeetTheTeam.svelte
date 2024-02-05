@@ -83,11 +83,11 @@
     }
 </script>
 
-<section class="pt-40">
+<section class="pt-20">
     <div class="flex flex-col ">
         <div class="text-center">
-            <p class="text-5xl font-bold">Meet the Team</p>
-            <p class="text-xl font-semibold text-black/75">Armit consists of 8 students ...</p>
+            <p class="text-5xl font-bold text-[#1F1F3A]">Our Team</p>
+            <p class="text-xl font-semibold py-2 text-[#1F1F3A]/90">ArmIT'23 consists of 8 students:</p>
         </div>
         <!-- Team Cards -->
         <div
@@ -101,13 +101,13 @@
                 class="max-w-sm flex flex-col border-none justify-center transition"
             >
                 <img 
-                    class="object-cover hover:border-t-[16px] hover:border-l-[16px] border-blue-500 saturate-0 hover:saturate-100 duration-300" 
+                    class="object-cover hover:shadow-[-12px_-12px_0_#63B2FF] outline-[#63B2FF] lg:saturate-[0.25] hover:saturate-100 duration-300" 
                     src="{image}" 
                     alt="Team member"
                 >
-                <div class="flex flex-col gap-y-2">
+                <div class="pt-2 flex flex-col">
                     <p class="text-2xl font-bold">{name}</p>
-                    <p class="text-xl font-bold">{role}</p>
+                    <p class="text-xl text-[#182E6F] font-bold pb-2">{role}</p>
                     <div class="flex flex-row gap-x-4">
                         <a href="" class="hover:scale-110 duration-300 max-w-[24px]"><img src="https://cdn0.iconfinder.com/data/icons/basic-uses-symbol-vol-1/100/Call_Phone_Cell_Ring_Pick_up-512.png" alt="phone"></a>
                         <a href="" class="hover:scale-110 duration-300 max-w-[24px]"><img src="https://www.iconpacks.net/icons/2/free-mail-icon-2569-thumb.png" alt="mail"></a>
@@ -119,6 +119,6 @@
         </div>
         
     </div>
-    <button on:click={next}>NEXT</button>
     <button on:click={previous}>PREVIOUS</button>
+    <button on:click={next}>NEXT</button>
 </section>
