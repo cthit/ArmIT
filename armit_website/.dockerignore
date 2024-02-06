@@ -1,0 +1,8 @@
+.git
+node_modules
+.eslint*
+.svelte-kit
+.vscode
+.git*
+Dockerfile*
+

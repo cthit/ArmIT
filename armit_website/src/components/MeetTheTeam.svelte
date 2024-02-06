@@ -101,7 +101,7 @@
                 class="max-w-sm flex flex-col border-none justify-center transition team-image" 
             >
                 <img 
-                    class="object-cover hover:shadow-[-12px_-12px_0_#63B2FF] outline-[#6BBBF8] duration-300" 
+                    class="object-cover hover:shadow-[-12px_-12px_0_#63B2FF] outline-[#6BBBF8] duration-300 rounded-xl" 
                     src="{image}" 
                     alt="Team member"
                 >
