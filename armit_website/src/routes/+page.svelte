@@ -68,10 +68,11 @@
         <div class="z-10">
             <Cards/>
         </div>
-        <p class="underline text-lg font-bold text-black/75 mt-8 z-10">+ and many more!</p>
+        <!-- <p class="underline text-lg font-bold text-black/75 mt-8 z-10">+ and many more!</p> -->
         <a href="https://www.youtube.com/shorts/2p2HTSUF-NA" class="pt-12 pb-20 z-10">
-            <button class="flex gap-x-2 rounded-full px-6 py-4 bg-blue-700 
-                        hover:scale-110 hover:shadow-md hover:bg-blue-800
+            <button class="flex gap-x-2 rounded-full px-6 py-4 bg-[#1C72C1]
+                        hover:scale-110 hover:shadow-md hover:opacity-75
+                        border-black border-2
                         transition duration-300">
                 <p class="text-white font-semibold text-lg">Browse the Full Catalogue</p> 
                 <img src="/openInNewTabIcon.png" alt="open in new tab">
@@ -99,7 +100,7 @@
         <Partners/>
     </section>
 
-    <div class="custom-shape-divider-bottom-1706465473 w-full overflow-hidden block fill-[#060928] bg-[#FFF] h-[24px] lg:h-[48px] w-[calc(100% + 1.3px)]">
+    <div class="custom-shape-divider-bottom-1706465473 w-full overflow-hidden hidden fill-[#060928] bg-[#11528D] h-[24px] md:block lg:h-[48px] w-[calc(100% + 1.3px)]">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 1000 100" preserveAspectRatio="none">
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>

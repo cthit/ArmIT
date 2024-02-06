@@ -153,7 +153,7 @@
     </div>
 
     <!-- Custom Event (Hard coded text, not in product catalogue) -->
-    <div class="relative bg-[#FF6262] overflow-hidden rounded-3xl
+    <div class="relative bg-[#7E7BFF] overflow-hidden rounded-3xl
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
     

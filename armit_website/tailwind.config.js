@@ -35,7 +35,7 @@ export default {
         }
       },
       gridTemplateRows: {
-        'cards': 'minmax(200px, 0.1fr) minmax(0, 0.3fr) minmax(0, 1fr)',
+        'cards': 'minmax(200px, 0.1fr) minmax(0, 0.4fr) minmax(0, 1fr)',
         'cards-mobile': 'minmax(200px, 0.1fr) minmax(0.2fr, 0.3fr) minmax(0.5fr, 1fr)'
       },
     }

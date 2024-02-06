@@ -5,7 +5,7 @@
 
     let people = [
         {name: "Kevin Collins", role: "President", image: "/kevin.png"},
-        {name: "David Gidlöf Sjöquist", role: "Treasurer", image: "/gide.png"},
+        {name: "David Gidlöf", role: "Treasurer", image: "/gide.png"},
         {name: "Liam Mayor", role: "Vice President", image: "/post.png"},
         {name: "Annelie Hansson", role: "Head of Marketing", image: "/waka.png"},
         {name: "Hanna Bahilu", role:"Event Organizer", image: "/montana.png"},
@@ -23,7 +23,7 @@
             if (width < 768) {
                 itemsToShow.set(1); // Small screens
             } else if (width >= 768 && width < 1280) {
-                itemsToShow.set(3); // Medium screens
+                itemsToShow.set(2); // Medium screens
             } else {
                 itemsToShow.set(4); // Large screens
             }
@@ -94,14 +94,14 @@
             on:touchstart={handleTouchStart}
             on:touchmove={handleTouchMove}
             on:touchend={handleTouchEnd} 
-            class=" scale-90 mx-auto grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center justify-items-center content-center w-4/5 gap-x-20 gap-y-8" id="team-images">
+            class=" scale-90 mx-auto grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 items-center justify-items-center content-center w-4/5 gap-x-20 gap-y-8" id="team-images">
             {#each displayItems as {name, role, image}, index (name + role + index)}
             <div    
                 in:fade={{ duration: 500 }} 
                 class="max-w-sm flex flex-col border-none justify-center transition team-image" 
             >
                 <img 
-                    class="object-cover hover:shadow-[-12px_-12px_0_#63B2FF] outline-[#63B2FF] duration-300" 
+                    class="object-cover hover:shadow-[-12px_-12px_0_#63B2FF] outline-[#6BBBF8] duration-300" 
                     src="{image}" 
                     alt="Team member"
                 >
