@@ -14,9 +14,3 @@
         <p class="animate-bounce w-32 text-5xl mx-auto">💃</p>
     </div>
 </div>
-
-<!-- <style lang="postcss">
-    :global(html) {
-        @apply bg-blue-200;
-    }
-</style> -->
