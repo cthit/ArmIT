@@ -1,6 +1,6 @@
 # ArmIT's website
 
-The ArmIT website is made in HTML + CSS using SvelteKit and Tailwind. Maintained by the ArmIT committee in the software engineering division of Chalmers University of Technology.
+The ArmIT website is made in HTML/CSS + JS using SvelteKit and Tailwind. Maintained by the ArmIT committee in the software engineering division of Chalmers University of Technology.
 
 ## Installation
 The application can be run through docker or npm. A dockerfile is available in the root of the source tree.
