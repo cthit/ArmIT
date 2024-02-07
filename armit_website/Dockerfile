@@ -16,10 +16,8 @@ COPY . .
 # Build the SvelteKit app with Vite
 RUN npm run build
 
-COPY package.json .
-COPY vite.config.js .
-
 EXPOSE 3000
+
 #Start the app
 CMD ["npm", "run", "preview"]
 
