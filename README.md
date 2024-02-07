@@ -32,10 +32,10 @@ cd armit_website #To access the root folder
 docker build -t <your desired image name> . #This will build your docker image. Include the dot.
 ```
 ```bash
-docker images #To see the info of your newly created image (tagid, image name, etc)
+docker images #To see the info of your newly created image (image id, image name, etc)
 ```
 ```bash
-docker run -p 3000:3000 <tagid> #This will run a container of your image and the application. Enter localhost in browser.
+docker run -p 3000:3000 <image id> #This will run a container of your image and the application. Enter localhost in browser.
 ```
 
 
