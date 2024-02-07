@@ -6,7 +6,7 @@
     <nav class="flex w-full h-32 text-white">
         <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
             <a href="/home" class="flex shrink-0 items-center" draggable="false">
-                <img class="lg:h-28 h-24" alt="ArmIT Logo" src="/ArmITLogo_plain.png" draggable="false"/>
+                <img class="lg:h-28 h-24" alt="ArmIT Logo" src="/logos/armit/lg_armit_plain.png" draggable="false"/>
             </a>
         </div>
         <div class="flex-grow justify-end p-12 gap-20 items-center text-xl m-0 font-inter lg:flex hidden">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="row-span-3 lg:flex hidden items-center">
-                <img class="w-auto pb-12 h-auto z-10" alt="Smurf" src="/smurf.png/" draggable="false"/>
+                <img class="w-auto pb-12 h-auto z-10" alt="Smurf" src="/smurfs/header_smurf.png/" draggable="false"/>
             </div>
             <div class="flex bg-transparent col-span-2 items-center">
                 <div class="flex flex-col justify-center lg:justify-end lg:text-start text-center lg:pl-64 gap-2 w-full lg:px-0 px-4 text-navtext 2xl:text-2xl lg:text-xl">
@@ -48,30 +48,30 @@
                         <div class="w-3/4 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_48px,_black_calc(100%-48px),transparent_100%)] lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_96px,_black_calc(100%-96px),transparent_100%)]">
                             <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                                 <li>
-                                    <img src="./accenture.svg" alt="Accenture"/>
+                                    <img alt="Accenture" src="/logos/company/lg_accenture.svg"/>
                                 </li>
                                 <li>
-                                    <img class="w-[192px] h-auto" alt="Centiro" src="/Centiro_logo.png"/>
+                                    <img class="w-[192px] h-auto" alt="Centiro" src="/logos/company/lg_centiro.png"/>
                                 </li>
                                 <li>
-                                    <img class="w-[128px] h-auto" alt="Cygni" src="/Cygni_logo.png"/>
+                                    <img class="w-[128px] h-auto" alt="Cygni" src="/logos/company/lg_cygni.png"/>
                                 </li>
                                 <li>
-                                    <img class="w-[192px] h-auto" alt="Opera" src="/Opera_GX_logo.png"/>
+                                    <img class="w-[192px] h-auto" alt="Opera" src="/logos/company/lg_opera_gx.png"/>
                                 </li>
                             </ul>    
-                            <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                            <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                                 <li>
-                                    <img src="./accenture.svg" alt="Accenture"/>
+                                    <img alt="Accenture" src="/logos/company/lg_accenture.svg"/>
                                 </li>
                                 <li>
-                                    <img class="w-[192px] h-auto" alt="Centiro" src="/Centiro_logo.png"/>
+                                    <img class="w-[192px] h-auto" alt="Centiro" src="/logos/company/lg_centiro.png"/>
                                 </li>
                                 <li>
-                                    <img class="w-[128px] h-auto" alt="Cygni" src="/Cygni_logo.png"/>
+                                    <img class="w-[128px] h-auto" alt="Cygni" src="/logos/company/lg_cygni.png"/>
                                 </li>
                                 <li>
-                                    <img class="w-[192px] h-auto" alt="Opera" src="/Opera_GX_logo.png"/>
+                                    <img class="w-[192px] h-auto" alt="Opera" src="/logos/company/lg_opera_gx.png"/>
                                 </li>
                             </ul>               
                         </div>

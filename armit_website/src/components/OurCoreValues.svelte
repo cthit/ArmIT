@@ -13,7 +13,7 @@
     <div class="grid md:grid-cols-3 gap-y-8 w-4/5 justify-items-center text-center gap-x-8 md:scale-90 lg:scale-100">
         <div class="flex flex-col gap-2 items-center max-w-sm">
             <div class="object-contain w-full h-full flex justify-center">
-                <img src="/jokey2.png" alt="handshake" draggable="false">
+                <img src="/smurfs/bonds_smurf.png" alt="gift smurf" draggable="false">
             </div>
             <div class="w-full">
                 <p class="text-xl font-bold text-white">Establishing Bonds</p>
@@ -22,7 +22,7 @@
         </div>
         <div class="flex flex-col gap-2 items-center max-w-sm">
             <div class="object-contain w-full h-full flex justify-center">
-                <img src="/smartsmurf.png" alt="head" draggable="false">
+                <img src="/smurfs/benefit_smurf.png" alt="smart smurf" draggable="false">
             </div>
             <div class="w-full">
                 <p class="text-xl font-bold text-white">Student Benefit</p>
@@ -31,7 +31,7 @@
         </div>
         <div class="flex flex-col gap-2 items-center max-w-sm">
             <div class="object-contain w-full flex justify-center">
-                <img src="/handysmurf2.png" alt="growth" draggable="false">
+                <img src="/smurfs/growth_smurf.png" alt="handy smurf" draggable="false">
             </div>
             <div class="w-full h-full">
                 <p class="text-xl font-bold text-white ">Managing Growth</p>
@@ -47,7 +47,7 @@
                         transition duration-300
                         ">
             <p class="text-white font-semibold text-lg">Learn More</p> 
-            <img src="/openInNewTabIcon.png" alt="open in new tab">
+            <img src="/icons/png/openInNewTabIcon.png" alt="open in new tab">
         </button>
     </a>
 </div>

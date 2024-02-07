@@ -29,7 +29,7 @@
 
 <div class="select-none">
     <div class="text-center">
-        <img draggable="false" class=" h-1/3  lg:max-h-96 md:max-h-72 sm:max-h-44 mx-auto" alt="ArmIT Logo" src="/ArmITLogga.png"  />
+        <img draggable="false" class=" h-1/3  lg:max-h-96 md:max-h-72 sm:max-h-44 mx-auto" alt="ArmIT Logo" src="/logos/armit/lg_armit_plain.png"  />
         
         <p class="text-sm font-semibold my-4">This site is under construction</p>
 

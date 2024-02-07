@@ -6,7 +6,7 @@
             "capacity": "100",
             "time":"45min - 1h",
             "price": "10 000",
-            "iconPath": "/icon_seminar.png",
+            "iconPath": "/icons/png/icon_seminar.png/",
             "extras":[{"type": "photoshoot", "price":"1000"}]
         },
         {
@@ -15,7 +15,7 @@
             "capacity": "not set",
             "time":"not set",
             "price": "not decided",
-            "iconPath": "/icon_hackatons.png",
+            "iconPath": "/icons/png/icon_hackatons.png/",
             "extras":[{"type": "photoshoot", "price":"1000"}]
         },
         {
@@ -24,7 +24,7 @@
             "capacity": "not set",
             "time":"not set",
             "price": "not set",
-            "iconPath": "/icon_marketing.png"
+            "iconPath": "/icons/png/icon_marketing.png"
         },
         {
             "itemName": "Study Breakfast",
@@ -32,7 +32,7 @@
             "capacity": "not set",
             "time":"not set",
             "price": "not set",
-            "iconPath": "/icon_breakfast.png"
+            "iconPath": "/icons/png/icon_breakfast.png"
         },
         {
             "itemName": "Digital Events",
@@ -40,7 +40,7 @@
             "capacity": "not set",
             "time":"not set",
             "price": "not set",
-            "iconPath": "/icon_digitalmarketing.png"
+            "iconPath": "/icons/png/icon_digitalmarketing.png"
         },
         {
             "itemName": "Give Out Merch",
@@ -48,7 +48,7 @@
             "capacity": "not set",
             "time":"not set",
             "price": "not set",
-            "iconPath": "/icon_sponsored.png"
+            "iconPath": "/icons/png/icon_sponsored.png"
         }
     ]
 }

@@ -21,9 +21,9 @@ export default {
         'navtext': '#214173',
       },
       backgroundImage: {
-        'header': "url('/header4.png/')",
-        'header-mobile': "url('/header_phone.png/')",
-        'values': "url('/values_background.png/')",
+        'header': "url('/backgrounds/header_main.png')",
+        'header-mobile': "url('/backgrounds/header_phone.png/')",
+        'values': "url('/backgrounds/bg_values.png/')",
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',

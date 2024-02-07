@@ -7,7 +7,7 @@
     <nav class="flex w-full h-32 text-white">
         <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
             <a href="/" class="flex shrink-0 items-center">
-                <img class="h-28" alt="ArmIT Logo" src="/ArmITLogo_smurf.png"/>
+                <img class="h-28" alt="ArmIT Logo" src="/logos/armit/lg_armit_smurf.png"/>
             </a>
         </div>
         <div class="flex w-full justify-end p-12 items-center">

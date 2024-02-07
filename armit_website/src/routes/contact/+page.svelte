@@ -49,14 +49,14 @@
                     class="mt-16 font-normal text-white/75 lg:text-base xl:text-2xl space-y-3"
                 >
                     <div class="flex space-x-2 items-center">
-                        <img class="max-h-[24px]" src="/mail_icon.png" alt=""/>
+                        <img class="max-h-[24px]" src="/icons/png/mail_icon.png" alt=""/>
                         <p class="">armit@chalmers.it</p>
                     </div>
                     <div class="flex space-x-2 items-center">
                         
                             <img
                                 class="max-h-[24px]"
-                                src="/location_icon.png"
+                                src="/icons/png/location_icon.png"
                                 alt=""
                             />
                             <a href="https://www.google.com/maps/place/Hubben+2.2/@57.6882996,11.9743574,17z/data=!3m1!4b1!4m6!3m5!1s0x464ff30b03281b63:0x17079f6a1c961735!8m2!3d57.6882968!4d11.9792283!16s%2Fg%2F1pp2wwm1_?entry=ttu" target="_blank"><p class="hover:underline">Hörsalsvägen 9, 412 58 Göteborg</p></a>
@@ -66,12 +66,12 @@
                     <a href="https://www.linkedin.com/company/armit/about/" target="_blank">
                         <img
                             class="max-w-[40px] max-h-[40px]"
-                            src="/linkedin_icon.png"
+                            src="/icons/png/linkedin_icon.png"
                             alt="linkedin"
                         />
                     </a>
-                    <a href="https://www.instagram.com/armit_chalmers/" target="_blank"><img src="/instagram_icon.png" alt="instagram"  /></a>
-                    <a href="https://www.facebook.com/armitchalmers/?locale=sv_SE" target="_blank"><img src="/facebook_icon.png" alt="facebook"/></a>
+                    <a href="https://www.instagram.com/armit_chalmers/" target="_blank"><img src="/icons/png/instagram_icon.png" alt="instagram"  /></a>
+                    <a href="https://www.facebook.com/armitchalmers/?locale=sv_SE" target="_blank"><img src="/icons/png/facebook_icon.png" alt="facebook"/></a>
                 </div>
                 <div
                     class="mt-12 bg-[#00FFC2] w-[230px] h-[3px] rounded-full"
@@ -84,7 +84,7 @@
             <div class="w-[100%] h-[100%]">
                 <div class=" mr-2 w-[85%] h-[100%] float-right">
                     {#if !$message}
-                    <img class="mx-auto md:h-[50px] lg:h-[100px] max-h-[100px]" src="/ArmITLogo_plain.png" alt="ArmIT logo" draggable="false">
+                    <img class="mx-auto md:h-[50px] lg:h-[100px] max-h-[100px]" src="/logos/armit/lg_armit_plain.png" alt="ArmIT logo" draggable="false">
                     <!-- <SuperDebug data={$form} /> -->
                     
                     <form use:enhance  id="contactForm" class="flex flex-col" method="POST" action="?/sendEmail" autocomplete="off">
@@ -115,7 +115,7 @@
                             <div class="flex flex-col duration-500 text-white/75 font-bold text-2xl
                             h-full w-full items-center
                             ">
-                            <img class="animate-pulse h-[250px]" src="/ArmITLogo_plain.png" alt="">
+                            <img class="animate-pulse h-[250px]" src="/logos/armit/lg_armit_plain.png" alt="">
                                 <p class="text-3xl mt-20">{$message}</p>
                                 <p class="text-3xl">We will contact you shortly</p>
                                 <a class="text-lg underline mt-6" href="/">Return to Homepage</a>
@@ -143,7 +143,7 @@
 <style lang="postcss">
   
     .full-image-bg {
-        background-image: url("bg_contact.jpg");
+        background-image: url("/backgrounds/bg_contact.jpg");
         background-size: cover;
         @apply backdrop-blur-xl;
     }

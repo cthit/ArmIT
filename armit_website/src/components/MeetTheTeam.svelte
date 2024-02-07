@@ -4,13 +4,14 @@
     import { onMount } from 'svelte';
 
     let people = [
-        {name: "Kevin Collins", role: "President", image: "/kevin.png", linkedin: "https://www.linkedin.com/in/kevcol/", mail: "ordf.armit@chalmers.it"},
-        {name: "David Gidlöf", role: "Treasurer", image: "/gide.png", linkedin: "https://www.linkedin.com/in/davidgidl%C3%B6f/", mail: "kassor.armit@chalmers.it"},
-        {name: "Liam Mayor", role: "Vice President", image: "/post.png", linkedin: "https://www.linkedin.com/in/liam-mayor/", mail: "sekreterare.armit@chalmers.it"},
-        {name: "Annelie Hansson", role: "Head of Marketing", image: "/waka.png", linkedin: "https://www.linkedin.com/in/annelie-w-hansson/", mail: "annelieh@chalmers.it"},
-        {name: "Hanna Bahilu", role:"Event Organizer", image: "/montana.png", linkedin: "https://www.linkedin.com/in/hanna-bahilu-34a54b7d/", mail: "bahilu@chalmers.it"},
-        {name: "Hannah Tu", role: "Head of Logistics", image: "/utarn.png", linkedin: "https://www.linkedin.com/in/hannah-tu/", mail: "tuha@chalmers.it"},
-        {name: "Mikael Motin", role:"Business Contact", image: "/lustig.png", linkedin: "https://www.linkedin.com/in/mikael-motin-253292254/", mail: "motin@chalmers.it"}
+        {name: "Kevin Collins", role: "President", image: "/portraits/individual/kev.png", linkedin: "https://www.linkedin.com/in/kevcol/", mail: "ordf.armit@chalmers.it"},
+        {name: "David Gidlöf", role: "Treasurer", image: "/portraits/individual/gide.png", linkedin: "https://www.linkedin.com/in/davidgidl%C3%B6f/", mail: "kassor.armit@chalmers.it"},
+        {name: "Liam Mayor", role: "Vice President", image: "/portraits/individual/post.png", linkedin: "https://www.linkedin.com/in/liam-mayor/", mail: "sekreterare.armit@chalmers.it"},
+        {name: "Annelie Hansson", role: "Head of Marketing", image: "/portraits/individual/waka.png", linkedin: "https://www.linkedin.com/in/annelie-w-hansson/", mail: "annelieh@chalmers.it"},
+        {name: "Hanna Bahilu", role:"Event Organizer", image: "/portraits/individual/montana.png", linkedin: "https://www.linkedin.com/in/hanna-bahilu-34a54b7d/", mail: "bahilu@chalmers.it"},
+        {name: "Hannah Tu", role: "Head of Logistics", image: "/portraits/individual/utarn.png", linkedin: "https://www.linkedin.com/in/hannah-tu/", mail: "tuha@chalmers.it"},
+        {name: "Mikael Motin", role:"Business Contact", image: "/portraits/individual/lustig.png", linkedin: "https://www.linkedin.com/in/mikael-motin-253292254/", mail: "motin@chalmers.it"},
+        {name: "Jonas Nemeth", role:"Business Contact", image: "/portraits/individual/doxxy.png", linkedin: "https://www.linkedin.com/in/jonas-nemeth-546b43b9/", mail: "jonasne@chalmers.it"}
     ]
 
     let currentIndex = writable(0);
