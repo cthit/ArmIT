@@ -27,6 +27,8 @@
     if(maintenanceMode == true && browser) {
         goto("/maintenance");
     }
+
+    
     
 </script>
 <!-- Example of loading items from the product catalogue -->
@@ -75,7 +77,7 @@
                         border-black border-2
                         transition duration-300">
                 <p class="text-white font-semibold text-lg">Browse the Full Catalogue</p> 
-                <img src="/openInNewTabIcon.png" alt="open in new tab">
+                <img src="/icons/png/openInNewTabIcon.png" alt="open in new tab">
             </button>
         </a>
     </section>

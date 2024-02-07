@@ -15,8 +15,11 @@ html{
   scroll-behavior: smooth;
 }
 
-#team-images:hover > .team-image{
-  filter: saturate(0)
+
+@media (min-width: 1024px) {
+  #team-images:hover > .team-image{
+    filter: saturate(0)
+  }  
 }
 
 #team-images:hover > .team-image:hover{

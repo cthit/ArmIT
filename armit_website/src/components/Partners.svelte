@@ -25,12 +25,12 @@
                 <div class="flex justify-center items-center pl-4 text-[#979797]">
                     <input class="bg-transparent text-center" placeholder="email@example.com" type="email" id="e-mail" name="e-mail"><br><br>
                 </div>
-                <div class="flex gap-2 justify-center hover:opacity-80 transition-opacity cursor-pointer items-center rounded-3xl bg-[#6BBBF8] border-black border-2 m-1 text-white shadow-lg">
+                <div class="flex gap-2 justify-center hover:opacity-80 transition cursor-pointer items-center rounded-3xl bg-[#6BBBF8] border-black border-2 m-1 text-white shadow-lg">
                     <input type="submit" value="Contact me" class="cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </form>
-        <a href="mailto: armit@chalmers.it" class="flex gap-2 w-48 h-14 justify-center hover:opacity-80 transition-opacity items-center rounded-3xl text-xl bg-[#196AB6] border-black border-2 m-1 text-white shadow-lg" draggable="false">
+        <a href="mailto: armit@chalmers.it" class="flex gap-2 w-48 h-14 justify-center hover:opacity-80 hover:scale-110 transition items-center rounded-3xl text-xl bg-[#196AB6] border-black border-2 m-1 text-white shadow-lg" draggable="false">
             Contact us
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
         </a>

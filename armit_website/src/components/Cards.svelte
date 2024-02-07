@@ -20,7 +20,7 @@
         
         <a href="/" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0">
-                <img src="/circle.png" alt="" class="max-w-full"/>
+                <img src="/icons/png/circle.png" alt="" class="max-w-full"/>
             </div>
 
             <img draggable="false"  src="{data.products[0].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
@@ -43,7 +43,7 @@
         
         <a href="/" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
-                <img src="/bg_hackatons.png" alt="" class="max-w-full w-full object-cover"/>
+                <img src="/backgrounds/bg_hackatons.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
             <img draggable="false"  src="{data.products[1].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
@@ -67,7 +67,7 @@
         
         <a href="/" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
-                <img src="/bg_digitalevents.png" alt="" class="max-w-full w-full object-cover"/>
+                <img src="/backgrounds/bg_digitalevents.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
             <img draggable="false"  src="{data.products[4].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
@@ -90,10 +90,10 @@
 
         <a href="/" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
-                <img src="/bg_marketing.png" alt="" class="max-w-full w-full object-cover"/>
+                <img src="/backgrounds/bg_marketing.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
-            <img draggable="false"  src="{data.products[2].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
+            <img draggable="false" src="{data.products[2].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
 
             <div class="relative text-center mx-auto px-4 mb-2 -mt-4 
                         w-full h-fit">
@@ -113,7 +113,7 @@
     
         <a href="/" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
-                <img src="/sponsored_bg.png" alt="" class="max-w-full w-full object-cover"/>
+                <img src="/backgrounds/bg_sponsored.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
             <img draggable="false"  src="{data.products[5].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
@@ -136,7 +136,7 @@
     
         <a href="/" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
-                <img src="/bg_breakfast.png" alt="" class="max-w-full w-full object-cover"/>
+                <img src="/backgrounds/bg_breakfast.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
             <img draggable="false"  src="{data.products[3].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
@@ -159,10 +159,10 @@
     
         <a href="/" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
-                <img src="/customevent_bg.png" alt="" class="max-w-full w-full object-cover"/>
+                <img src="/backgrounds/bg_customevent.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
 
-            <img draggable="false"  src="/customevent_icon.png" alt="teacher with whiteboard " class="relative px-4 mx-auto">
+            <img draggable="false"  src="/icons/png/customevent_icon.png" alt="teacher with whiteboard " class="relative px-4 mx-auto">
 
             <div class="relative text-center mx-auto px-4 mb-2 -mt-4 
                         w-full h-fit">
