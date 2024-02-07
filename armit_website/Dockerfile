@@ -1,5 +1,5 @@
 # Use an official Node.js image as a base image
-FROM node:16
+FROM node:18-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -16,10 +16,9 @@ COPY . .
 # Build the SvelteKit app with Vite
 RUN npm run build
 
-# Expose the port the app will run on
-ENV PORT 8080
-EXPOSE 8080
-EXPOSE 24678 
+COPY package.json .
+COPY vite.config.js .
 
+EXPOSE 3000
 #Start the app
-CMD ["node", "build"]
+CMD ["npm", "run", "preview"]
