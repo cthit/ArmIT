@@ -12,14 +12,18 @@
     <!-- Below is grid -->
     <div class="grid md:grid-cols-3 gap-y-8 w-4/5 justify-items-center text-center gap-x-8 md:scale-90 lg:scale-100">
         <div class="flex flex-col gap-2 items-center max-w-sm">
-            <div class="object-contain w-full h-full flex justify-center"><img src="/jokey2.png" alt="handshake" draggable="false"></div>
+            <div class="object-contain w-full h-full flex justify-center">
+                <img src="/jokey2.png" alt="handshake" draggable="false">
+            </div>
             <div class="w-full">
                 <p class="text-xl font-bold text-white">Establishing Bonds</p>
                 <p class="mt-2 text-lg font-bold text-white/75">We believe building trust, promoting collaboration and forging meaningful connections are essential parts of success</p>
             </div>
         </div>
         <div class="flex flex-col gap-2 items-center max-w-sm">
-            <div class="object-contain w-full h-full flex justify-center"><img src="/smartsmurf.png" alt="head" draggable="false"></div>
+            <div class="object-contain w-full h-full flex justify-center">
+                <img src="/smartsmurf.png" alt="head" draggable="false">
+            </div>
             <div class="w-full">
                 <p class="text-xl font-bold text-white">Student Benefit</p>
                 <p class="mt-2 text-lg font-bold text-white/75">Prioritizing student wellness, we aim to craft optimal experiences and curate events that contribute growth and fulfillment</p>

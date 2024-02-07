@@ -11,7 +11,7 @@
         </div>
         <div class="flex-grow justify-end p-12 gap-20 items-center text-xl m-0 font-inter lg:flex hidden">
             <a href="#services" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">Services</a>
-            <a href="#" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">Team</a>
+            <a href="#team" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">Team</a>
             <a href="https://date-it.se/" target="_blank" class="hover:opacity-50 transition-opacity drop-shadow-lg" draggable="false">DatE-IT</a>
             <a href="/contact" class="px-8 py-3 drop-shadow-xl leading-none bg-[#060928] hover:bg-nav transition-all lg:mt-0 rounded-full" draggable="false">Contact</a>
         </div>

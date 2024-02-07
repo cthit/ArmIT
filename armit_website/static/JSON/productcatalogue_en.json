@@ -6,7 +6,7 @@
             "capacity": "100",
             "time":"45min - 1h",
             "price": "10 000",
-            "iconPath": "/teacher_whiteboard.png",
+            "iconPath": "/icon_seminar.png",
             "extras":[{"type": "photoshoot", "price":"1000"}]
         },
         {

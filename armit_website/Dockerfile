@@ -16,6 +16,7 @@ COPY . .
 # Build the SvelteKit app with Vite
 RUN npm run build
 
+#Expose port
 EXPOSE 3000
 
 #Start the app

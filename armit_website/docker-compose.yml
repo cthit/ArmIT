@@ -3,8 +3,6 @@ services:
   armitapp:
     image: armitapp:1.0
     ports:
-      - 8080:8080
-      - 24678:24678
-      - 5173:5173
+      - 3000:3000
     tty: true
     stdin_open: true

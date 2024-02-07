@@ -6,10 +6,10 @@
     display: none;
   }
   
-  * {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+*{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 html{
   scroll-behavior: smooth;

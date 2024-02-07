@@ -9,10 +9,10 @@ export const getProductcatalogue = async (language) => {
     let src = "";
 
     if(language.toLowerCase() == "sv" || language.toLowerCase() == "svenska") {
-        src = "src/JSON/produktkatalog_sv.json";
+        src = "/JSON/productcatalogue_sv.json";
     }
     if(language.toLowerCase() == "en" || language.toLowerCase() == "english") {
-        src = "src/JSON/productcatalogue_en.json";
+        src = "/JSON/productcatalogue_en.json";
     }
     if(!src == "") {
         const res = await fetch(src);
