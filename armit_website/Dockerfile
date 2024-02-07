@@ -1,18 +1,25 @@
-FROM node:18-alpine AS build
+# Use an official Node.js image as a base image
+FROM node:16
 
+# Set the working directory inside the container
 WORKDIR /app
-COPY package*.json .
-RUN rm -rf node_modules
-RUN rm -rf build
-RUN npm install
+
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install --legacy-peer-deps
+
+# Copy the rest of the application code to the working directory
 COPY . .
+
+# Build the SvelteKit app with Vite
 RUN npm run build
 
-FROM node:18-alpine AS run
+# Expose the port the app will run on
+ENV PORT 8080
+EXPOSE 8080
+EXPOSE 24678 
 
-WORKDIR /app
-COPY --from=build /app/package.json ./package.json
-COPY --from=build /app/build ./build
-RUN npm install --production
-
-ENTRYPOINT [ "node", "build" ]
+#Start the app
+CMD ["node", "build"]

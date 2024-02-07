@@ -1,10 +1,10 @@
+version: '3'
 services:
-   app:
-    restart: always
-    image: svelte-docker
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: run
+  armitapp:
+    image: armitapp:1.0
     ports:
-      - 3000:5050
+      - 8080:8080
+      - 24678:24678
+      - 5173:5173
+    tty: true
+    stdin_open: true
