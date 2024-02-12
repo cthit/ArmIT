@@ -13,7 +13,7 @@
                 md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1240px]
                 gap-x-[50px] gap-y-[50px]">
     
-    <!-- Lunch Seminars 1st -->
+    <!-- Lunch Seminars (0) -->
     <div class="relative bg-[#1F43FF] overflow-hidden rounded-3xl
                 w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
                 duration-500 hover:scale-110 hover:shadow-xl">
@@ -36,7 +36,7 @@
         </a>
     </div>
 
-    <!-- Hackatons 2nd -->
+    <!-- Hackatons (1) -->
     <div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
                 w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
                 duration-500 hover:scale-110 hover:shadow-xl">
@@ -60,7 +60,7 @@
     </div>
 
     
-    <!-- Digital Events 7th -->
+    <!-- Digital Events (4) -->
     <div class="relative bg-[#463C4B] overflow-hidden rounded-3xl
                 w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
                 duration-500 hover:scale-110 hover:shadow-xl">
@@ -84,7 +84,7 @@
     </div>
 
     <!-- Sport Event (number 6 in catalogue) -->
-    <div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
+    <div class="hidden lg:block visible relative bg-[#00FFC2] overflow-hidden rounded-3xl
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
     
@@ -106,7 +106,7 @@
         </a>
     </div>
 
-    <!-- Marketing 3rd -->
+    <!-- Marketing (2) -->
     <div class="relative bg-[#361497] overflow-hidden rounded-3xl
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
@@ -130,7 +130,7 @@
     </div>
 
     <!-- Give Our Merch (5) -->
-    <div class="relative bg-[#BB4DFF] overflow-hidden rounded-3xl
+    <div class="hidden lg:block visible relative bg-[#BB4DFF] overflow-hidden rounded-3xl
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
     
@@ -152,7 +152,7 @@
         </a>
     </div>
 
-    <!-- Study Breakfast 6th -->
+    <!-- Study Breakfast (3) -->
     <div class="relative bg-[#FFFA87] overflow-hidden rounded-3xl
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
