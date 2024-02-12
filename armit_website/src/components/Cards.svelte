@@ -83,6 +83,29 @@
         </a>
     </div>
 
+    <!-- Sport Event (number 6 in catalogue) -->
+    <div class="relative bg-[#00FFC2] overflow-hidden rounded-3xl
+    w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
+    duration-500 hover:scale-110 hover:shadow-xl">
+    
+        <a href="/" draggable="false" class="flex-1">
+            <div class="z-0 absolute bottom-0 w-full">
+                <img src="/backgrounds/bg_sportevent.png" alt="" class="max-w-full w-full object-cover"/>
+            </div>
+
+            <img draggable="false"  src="{data.products[6].iconPath}" alt="teacher with whiteboard " class="relative px-4 mx-auto">
+
+            <div class="relative text-center mx-auto px-4 mb-2 -mt-4 
+                        w-full h-fit">
+                <p class="text-xl 2xl:text-2xl font-semibold text-white truncate mb-1" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[6].itemName}</p>
+                
+                <div class="text-left items-center line-clamp-4">
+                    <p class="text-xs 2xl:text-base font-semibold text-white" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">{data.products[6].description}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
     <!-- Marketing 3rd -->
     <div class="relative bg-[#361497] overflow-hidden rounded-3xl
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
@@ -174,6 +197,8 @@
             </div>
         </a>
     </div>
+
+        
     
 </section> 
 {/await}

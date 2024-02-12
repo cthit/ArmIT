@@ -5,7 +5,7 @@
 <div class="flex flex-col w-full h-screen bg-no-repeat bg-cover lg:bg-header bg-header-mobile absolute overflow-hidden" id="menu">
     <nav class="flex w-full h-32 text-white">
         <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
-            <a href="/home" class="flex shrink-0 items-center" draggable="false">
+            <a href="/" class="flex shrink-0 items-center" draggable="false">
                 <img class="lg:h-28 h-24" alt="ArmIT Logo" src="/logos/armit/lg_armit_plain.png" draggable="false"/>
             </a>
         </div>

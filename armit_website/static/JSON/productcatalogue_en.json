@@ -43,12 +43,20 @@
             "iconPath": "/icons/png/icon_digitalmarketing.png"
         },
         {
-            "itemName": "Give Out Merch",
-            "description": "Send us your merch! Text text text",
+            "itemName": "Company Merch",
+            "description": "Boost the mood with some of your merch!",
             "capacity": "not set",
             "time":"not set",
             "price": "not set",
             "iconPath": "/icons/png/icon_sponsored.png"
+        },
+        {
+            "itemName": "Sporting Events",
+            "description": "A fun and active way to engage with students",
+            "capacity": "not set",
+            "time":"not set",
+            "price": "not set",
+            "iconPath": "/icons/png/icon_sport.png"
         }
     ]
 }
