@@ -1,6 +1,7 @@
-import { fail } from "@sveltejs/kit"
-import { z } from "zod"
-import { superValidate, message } from "sveltekit-superforms/server"
+import { fail } from "@sveltejs/kit";
+import { z } from "zod";
+import { superValidate, message } from "sveltekit-superforms/server";
+import nodemailer from 'nodemailer';
 
 
 
@@ -38,7 +39,36 @@ export const actions = {
         return fail(400, { form });
         }
 
-        // TODO
+        // TODO - send email:
+        try {
+            // Create a Nodemailer transporter using SMTP
+            let transporter = nodemailer.createTransport({
+                service: 'Gmail',
+                auth: {
+                    user: 'motin@chalmers.it', 
+                    pass: 'bcsvlrwvobdfacwg' 
+                }
+            });
+    
+            // Define the email message
+            let mailOptions = {
+                from: '"Armit Website Contact Form" motin@chalmers.it', // sender address
+                to: 'armit@chalmers.it, motin@chalmers.it', // list of receivers
+                subject: '$CASH SEASON! 💵🤑ArmIT Contact Form Proposal', // Subject line
+                text: "Company: " + form.data.company + "\n" +
+                    "Name: " + form.data.name + "\n" +
+                    "Email: " + form.data.email + "\n" +
+                    "Phone: " + form.data.phone + "\n" +
+                    "Message: " + form.data.message // plain text body
+            };
+    
+            // Send mail with defined transport object
+            let info = await transporter.sendMail(mailOptions);
+    
+            console.log('Message sent: %s', info.messageId);
+        } catch (error) {
+            console.error('Error occurred while sending email:', error);
+        }
         
         return message(form, "Thanks for reaching out!" );
     }
