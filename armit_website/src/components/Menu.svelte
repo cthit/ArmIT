@@ -3,10 +3,10 @@
 </script>
 
 <div class="flex flex-col w-full h-screen bg-no-repeat bg-cover lg:bg-header bg-header-mobile absolute overflow-hidden" id="menu">
-    <nav class="flex w-full h-32 text-white">
+    <nav class="flex w-full h-24 2xl:h-32 text-white">
         <div class="flex basis-1/2 justify-start items-center p-12 text-xl m-0 font-inter">
             <a href="/home" class="flex shrink-0 items-center" draggable="false">
-                <img class="lg:h-28 h-24" alt="ArmIT Logo" src="/logos/armit/lg_armit_plain.png" draggable="false"/>
+                <img class="2xl:h-28 h-24 pt-2" alt="ArmIT Logo" src="/logos/armit/lg_armit_plain.png" draggable="false"/>
             </a>
         </div>
         <div class="flex-grow justify-end p-12 gap-20 items-center text-xl m-0 font-inter lg:flex hidden">
@@ -24,7 +24,7 @@
     <header class="max-h-full h-full overflow-hidden flex font-inter text-white">
         <div class="grid grid-rows-3 grid-cols-2 w-full h-full">
             <div class="flex row-span-3 lg:col-span-1 col-span-2 justify-center items-center">
-                <div class="flex flex-grow justify-end flex-col gap-6  w-full lg:pl-64">
+                <div class="flex flex-grow justify-end flex-col gap-6 w-full pl-32 2xl:pl-64">
                     <div class="flex 2xl:text-8xl text-6xl lg:justify-start lg:text-start text-center justify-center font-bold">
                        We are ArmIT
                     </div>
@@ -40,7 +40,7 @@
                 <img class="w-auto pb-12 h-auto z-10" alt="Smurf" src="/smurfs/header_smurf.png/" draggable="false"/>
             </div>
             <div class="flex bg-transparent col-span-2 items-center">
-                <div class="flex flex-col justify-center lg:justify-end lg:text-start text-center lg:pl-64 gap-2 w-full lg:px-0 px-4 text-navtext 2xl:text-2xl lg:text-xl">
+                <div class="flex flex-col justify-center lg:justify-end lg:text-start text-center pl-32 2xl:pl-64 gap-2 w-full text-navtext 2xl:text-2xl lg:text-xl">
                     <h3>
                         Trusted by 
                     </h3>

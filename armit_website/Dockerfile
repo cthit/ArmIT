@@ -23,7 +23,6 @@ EXPOSE 3000
 CMD ["npm", "run", "preview"]
 
 
-
 #Should the above not work, use this:
 
 # FROM node:17-alpine

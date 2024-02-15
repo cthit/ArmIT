@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'laptop': '1024px',
+        'laptop': '1280px',
       },
       textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',

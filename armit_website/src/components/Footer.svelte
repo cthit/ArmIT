@@ -1,5 +1,5 @@
 <div class="h-full w-full bg-[#060928]">
-    <div class="flex flex-col gap-2 lg:gap-8 justify-center items-center h-full w-full px-24 text-white">
+    <div class="flex flex-col gap-2 laptop:gap-4 2xl:gap-8 justify-center items-center h-full w-full px-24 text-white">
         <img class="lg:h-28 h-24" alt="ArmIT Logo" src="/logos/armit/lg_armit_plain.png" draggable="false"/>
         <div class="flex text-center flex-col gap-1 items-center text-base md:text-lg first-letter:ustify-center">
             <a href="mailto: armit@chalmers.it" class="underline hover:opacity-80 transition-opacity">armit@chalmers.it</a>

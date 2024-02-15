@@ -109,7 +109,7 @@
     </div>
     <section
         id="footer" 
-        class="flex w-full h-[40vh]">
+        class="flex w-full laptop:h-60 2xl:h-[40vh]">
         <Footer/>
     </section>
 </div>
