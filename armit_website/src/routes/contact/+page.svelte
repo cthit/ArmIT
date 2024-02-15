@@ -20,16 +20,16 @@
 </script>
 
 <body
-    class="sm:hidden md:flex lg:flex
+    class="
             flex justify-center items-center full-image-bg
             w-screen h-full overflow-scroll"
 >
     <div
-        class="grid grid-cols-2 justify-items-center align-middle backdrop-blur-md bg-black/60 rounded-[75px]
+        class="lg:grid lg:grid-cols-2 flex flex-col justify-items-center align-middle backdrop-blur-md bg-black/60 rounded-[75px]
                 w-[90%] min-h-screen max-h-full scroll-smooth"
     >
         <!-- GRID 1 - CONTACT INFORMATION -->
-        <div class="block w-[85%] h-[85%] self-center">
+        <div class="hidden lg:block w-[85%] h-[85%] self-center">
             <div class="max-w-[75%]">
                 <p
                     class="uppercase text-white font-bold lg:text-3xl xl:text-5xl"
@@ -79,32 +79,46 @@
             </div>
         </div>
 
+   
+
+
         <!-- GRID 2 - CONTACT FORM -->
-        <div class="flex justify-center mx-auto w-[85%] h-[85%] mb-12 self-center scroll-smooth">
+        <div class=" mx-auto w-[85%] h-[85%] mb-12 self-center scroll-smooth">
             <div class="w-[100%] h-[100%]">
-                <div class=" mr-2 w-[85%] h-[100%] float-right">
+                <div class="mt-4 lg:mr-2 w-[85%] h-[100%] lg:float-right mx-auto">
                     {#if !$message}
-                    <img class="mx-auto md:h-[50px] lg:h-[100px] max-h-[100px]" src="/logos/armit/lg_armit_plain.png" alt="ArmIT logo" draggable="false">
+                    <a href="/">
+                    <img class="mx-auto md:h-[100px] lg:h-[100px] max-h-[100px]" src="/logos/armit/lg_armit_plain.png" alt="ArmIT logo" draggable="false">
+                    </a>
+                         <!-- Hidden on lg: Get in Touch text and green line: -->
+                            <p
+                            class="lg:hidden text-center uppercase mt-6 mb-4 mx-auto text-white font-bold text-3xl"
+                            >
+                                Get in touch
+                            </p>
+                            <div
+                            class="lg:hidden mx-auto mb-8 bg-[#00FFC2] w-[230px] h-[3px] rounded-full"
+                            />
                     <!-- <SuperDebug data={$form} /> -->
                     
                     <form use:enhance  id="contactForm" class="flex flex-col" method="POST" action="?/sendEmail" autocomplete="off">
-                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="company">*Company</label>
-                        <input class="form-input md:text-[12px] md:h-[20px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
+                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="company">*Company</label>
+                        <input class="form-input md:text-[16px] md:h-[28px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
                         type="text" name="company" required autocomplete="off" bind:value={$form.company} />
 
-                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="name">*Name</label>
-                        <input class="form-input md:text-[12px] md:h-[20px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
+                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="name">*Name</label>
+                        <input class="form-input md:text-[16px] md:h-[28px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
                         type="text" name="name" required autocomplete="off" bind:value={$form.name} />
                       
-                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="email">*E-mail</label>
-                        <input class="form-input md:text-[12px] md:h-[20px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
+                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="email">*E-mail</label>
+                        <input class="form-input md:text-[16px] md:h-[28px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
                         type="email" name="email" required autocomplete="off" bind:value={$form.email} />
 
-                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="phone">Phone number</label>
-                        <input class="form-input md:text-[12px] md:h-[20px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
+                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="phone">Phone number</label>
+                        <input class="form-input md:text-[16px] md:h-[28px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
                         type="tel" name="phone" autocomplete="off" bind:value={$form.phone} />
                         
-                        <label class="form-label md:text-[12px] lg:text-lg xl:text-base" for="message">Message</label>
+                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="message">Message</label>
                         <textarea class="leading-normal resize-none h-32 form-input outline-0 focus:outline-white/10 focus:outline-1" 
                         type="text" name="message" autocomplete="off" bind:value={$form.message} />
 
