@@ -9,7 +9,6 @@
     import Divider from '../components/Divider.svelte'
     import { goto } from '$app/navigation';
     import { browser } from '$app/environment';
-    import { getProductcatalogue } from "../scripts/getProductcatalogue"
     import {menuToggler} from '../store/menuStore'
     import { onDestroy } from "svelte";
     let visible = false;
@@ -31,24 +30,6 @@
     
     
 </script>
-<!-- Example of loading items from the product catalogue -->
-<!-- <div>
-    {#await getProductcatalogue("sv")}
-    <p>Loading...</p>
-    {:then data} 
-    {#each data.products as product}
-    <div class=" grid-cols-3 max-w-sm bg-cyan-800 text-center justify-center">
-        <div>
-            <h1 class="justify-center text-white font-semibold">{product.itemName}</h1>
-            <h1 class="justify-center text-white font-semibold">{product.price}</h1>
-            <h1 class="justify-center text-white font-semibold">{product.time}</h1>
-        </div>
-        
-    </div>
-    {/each}
-    
-    {/await}
-</div> -->
 
 <div class="flex flex-col h-auto w-full max-w-full max-h-full overflow-hidden overscroll-contain">
     <section id="home">
@@ -65,13 +46,11 @@
     <section
         id="services" 
         class="relative flex flex-col items-center bg-white text-center pt-10 pb-20 overflow-hidden">
-        <!-- <img class="absolute z-0 top-0 left-0 w-full h-full object-cover" src="/cardsdiamondbg.png" alt=""> -->
         <p class="font-bold text-5xl mb-12 z-10">Explore Our Products</p>
         <div class="z-10">
             <Cards/>
         </div>
-        <!-- <p class="underline text-lg font-bold text-black/75 mt-8 z-10">+ and many more!</p> -->
-        <a href="https://www.youtube.com/shorts/2p2HTSUF-NA" class="pt-12 pb-20 z-10">
+        <a href="/PDF/productcatalogue_en.pdf" target="_blank" class="pt-12 pb-20 z-10">
             <button class="flex gap-x-2 rounded-full px-6 py-4 bg-[#1C72C1]
                         hover:scale-110 hover:shadow-md hover:opacity-75
                         border-black border-2
@@ -86,7 +65,6 @@
     <section 
         id="values"
         class="">
-        <!-- possible to change so that background is decided here, instead of in component-->
         <OurCoreValues/>
     </section>
 
@@ -109,7 +87,7 @@
     </div>
     <section
         id="footer" 
-        class="flex w-full laptop:h-80 2xl:h-[40vh]">
+        class="flex w-full h-[50vh] laptop:h-50vh 2xl:h-[40vh]">
         <Footer/>
     </section>
 </div>

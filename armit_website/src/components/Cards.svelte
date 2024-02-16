@@ -18,7 +18,7 @@
                 w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
                 duration-500 hover:scale-110 hover:shadow-xl">
         
-        <a href="/" draggable="false" class="flex-1">
+        <a href="/PDF/productcatalogue_en.pdf#page7" target="_blank" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0">
                 <img src="/icons/png/circle.png" alt="" class="max-w-full"/>
             </div>
@@ -41,7 +41,7 @@
                 w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
                 duration-500 hover:scale-110 hover:shadow-xl">
         
-        <a href="/" draggable="false" class="flex-1">
+        <a href="/PDF/productcatalogue_en.pdf#page8" target="_blank" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
                 <img src="/backgrounds/bg_hackatons.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
@@ -65,7 +65,7 @@
                 w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
                 duration-500 hover:scale-110 hover:shadow-xl">
         
-        <a href="/" draggable="false" class="flex-1">
+        <a href="/PDF/productcatalogue_en.pdf#page8" target="_blank" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
                 <img src="/backgrounds/bg_digitalevents.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
@@ -88,7 +88,7 @@
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
     
-        <a href="/" draggable="false" class="flex-1">
+        <a href="/PDF/productcatalogue_en.pdf#page8" target="_blank" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
                 <img src="/backgrounds/bg_sportevent.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
@@ -111,7 +111,7 @@
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
 
-        <a href="/" draggable="false" class="flex-1">
+        <a href="/PDF/productcatalogue_en.pdf#page12" target="_blank" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
                 <img src="/backgrounds/bg_marketing.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
@@ -134,7 +134,7 @@
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
     
-        <a href="/" draggable="false" class="flex-1">
+        <a href="/PDF/productcatalogue_en.pdf#page10" target="_blank" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
                 <img src="/backgrounds/bg_sponsored.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
@@ -157,7 +157,7 @@
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
     
-        <a href="/" draggable="false" class="flex-1">
+        <a href="/PDF/productcatalogue_en.pdf#page11" target="_blank" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
                 <img src="/backgrounds/bg_breakfast.png" alt="" class="max-w-full w-full object-cover"/>
             </div>
@@ -180,7 +180,7 @@
     w-full h-full max-w-[200px] max-h-[240px] 2xl:min-w-[240px] 2xl:min-h-[300px] 2xl:max-w-[300px] 2xl:max-h-[360px]
     duration-500 hover:scale-110 hover:shadow-xl">
     
-        <a href="/" draggable="false" class="flex-1">
+        <a href="/PDF/productcatalogue_en.pdf#page8" target="_blank" draggable="false" class="flex-1">
             <div class="z-0 absolute bottom-0 w-full">
                 <img src="/backgrounds/bg_customevent.png" alt="" class="max-w-full w-full object-cover"/>
             </div>

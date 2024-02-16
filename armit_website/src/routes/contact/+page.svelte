@@ -28,8 +28,10 @@
         class="lg:grid lg:grid-cols-2 flex flex-col justify-items-center align-middle backdrop-blur-md bg-black/60 rounded-[75px]
                 w-[90%] min-h-screen max-h-full scroll-smooth"
     >
+    
         <!-- GRID 1 - CONTACT INFORMATION -->
         <div class="hidden lg:block w-[85%] h-[85%] self-center">
+            <a href="/" class="flex pb-10"><img src="/icons/svg/return.svg" class="hover:opacity-80 transition-opacity" alt="return"></a>
             <div class="max-w-[75%]">
                 <p
                     class="uppercase text-white font-bold lg:text-3xl xl:text-5xl"
@@ -50,7 +52,7 @@
                 >
                     <div class="flex space-x-2 items-center">
                         <img class="max-h-[24px]" src="/icons/png/mail_icon.png" alt=""/>
-                        <p class="">armit@chalmers.it</p>
+                        <a href="mailto: armit@chalmers.it" class="hover:underline">armit@chalmers.it</a>
                     </div>
                     <div class="flex space-x-2 items-center">
                         
@@ -65,13 +67,13 @@
                 <div class="mt-16 flex items-center space-x-12">
                     <a href="https://www.linkedin.com/company/armit/about/" target="_blank">
                         <img
-                            class="max-w-[40px] max-h-[40px]"
+                            class="max-w-[40px] max-h-[40px] hover:opacity-50 transition-opacity ease-in"
                             src="/icons/png/linkedin_icon.png"
                             alt="linkedin"
                         />
                     </a>
-                    <a href="https://www.instagram.com/armit_chalmers/" target="_blank"><img src="/icons/png/instagram_icon.png" alt="instagram"  /></a>
-                    <a href="https://www.facebook.com/armitchalmers/?locale=sv_SE" target="_blank"><img src="/icons/png/facebook_icon.png" alt="facebook"/></a>
+                    <a href="https://www.instagram.com/armit_chalmers/" target="_blank"><img src="/icons/png/instagram_icon.png" class="hover:opacity-50 transition-opacity ease-in" alt="instagram"  /></a>
+                    <a href="https://www.facebook.com/armitchalmers/?locale=sv_SE" target="_blank"><img src="/icons/png/facebook_icon.png" class="hover:opacity-50 transition-opacity ease-in" alt="facebook"/></a>
                 </div>
                 <div
                     class="mt-12 bg-[#00FFC2] w-[230px] h-[3px] rounded-full"
@@ -136,19 +138,6 @@
                             </div>
                     {/if}     
                 </div>
-                
-
-
-
-
-
-
-
-
-
-
-
-                
             </div>
         </div>
     </div>
