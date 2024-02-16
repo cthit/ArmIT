@@ -19,7 +19,7 @@
     <header class="flex h-full font-inter text-navtext">
         <div class="flex flex-col items-center justify-center">
             <div class="flex flex-grow justify-end flex-col gap-8 w-full pl-10">
-                <a href="mailto:armit@chalmers.it" class="hover:text-[#295891] transition-all flex text-4xl">
+                <a href="/contact" class="hover:text-[#295891] transition-all flex text-4xl">
                     Contact us
                 </a>
                 <a href="https://www.date-it.se" class="hover:text-[#295891] transition-all flex text-4xl">

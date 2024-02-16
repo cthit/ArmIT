@@ -106,7 +106,7 @@
                     src="{image}" 
                     alt="Team member"
                 >
-                <div class="pt-2 flex flex-col">
+                <div class="pt-2 flex flex-col items-center lg:items-start">
                     <p class="text-2xl font-bold">{name}</p>
                     <p class="text-xl text-[#182E6F] font-bold pb-2">{role}</p>
                     <div class="flex flex-row gap-x-4">

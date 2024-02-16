@@ -7,6 +7,7 @@ export default {
     extend: {
       screens: {
         'laptop': '1280px',
+        'tablet': '1000px'
       },
       textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',
