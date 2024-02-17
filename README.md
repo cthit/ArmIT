@@ -16,7 +16,6 @@ npm install -D tailwindcss
 ## Running the application
 
 To run the application in developer mode using npm, run the following lines in the terminal.
-
 ```bash
 npm run dev #To run the application
 ```
