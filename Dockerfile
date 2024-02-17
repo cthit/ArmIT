@@ -1,42 +1,16 @@
-# Use an official Node.js image as a base image
-FROM node:18-alpine
-
-# Set the working directory inside the container
+FROM node:20-alpine AS builder
 WORKDIR /app
-
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
-
-# Install dependencies
-RUN npm install
-
-# Copy the rest of the application code to the working directory
+COPY package*.json .
+RUN npm ci
 COPY . .
-
-# Build the SvelteKit app with Vite
 RUN npm run build
+RUN npm prune --production
 
-#Expose port
+FROM node:20-alpine
+WORKDIR /app
+COPY --from=builder /app/build build/
+COPY --from=builder /app/node_modules node_modules/
+COPY package.json .
 EXPOSE 3000
-
-#Start the app
-CMD ["npm", "run", "preview"]
-
-
-#Should the above not work, use this:
-
-# FROM node:17-alpine
-
-# WORKDIR /app
-
-# COPY package*.json ./
-
-# RUN npm install --legacy-peer-deps
-
-# COPY . .
-
-# RUN npm run build
-
-# EXPOSE 3000
-
-# CMD ["npm", "run", "dev"]
+ENV NODE_ENV=production
+CMD [ "node", "build" ]
