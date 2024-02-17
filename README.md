@@ -18,16 +18,10 @@ npm install -D tailwindcss
 To run the application in developer mode using npm, run the following lines in the terminal.
 
 ```bash
-cd armit_website #To access the root folder
-```
-```bash
 npm run dev #To run the application
 ```
 
 To run the application using docker, run the following lines in the terminal.
-```bash
-cd armit_website #To access the root folder
-```
 ```bash
 docker build -t <your desired image name> . #This will build your docker image. Include the dot.
 ```
