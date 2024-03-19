@@ -6,6 +6,7 @@ export const actions = {
         const form = await request.formData();
         const email = form.get('e-mail');
 
+        // Can change this in the future if u want:
         let mailOptions = {
             from: '"Armit (Contact ME)" <motin@chalmers.it>',
             to: 'armit@chalmers.it, motin@chalmers.it',
