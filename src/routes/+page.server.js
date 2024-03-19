@@ -9,7 +9,7 @@ export const actions = {
         let mailOptions = {
             from: '"Armit (Contact ME)" <motin@chalmers.it>',
             to: 'armit@chalmers.it, motin@chalmers.it',
-            subject: ':dancer::dancer:Contact ME Form',
+            subject: '💃💃Contact ME Form',
             text: "Please reach out to me at: " + email
         };
 
