@@ -1,9 +1,7 @@
 import { fail } from "@sveltejs/kit";
 import { z } from "zod";
 import { superValidate, message } from "sveltekit-superforms/server";
-import { GOTIFY_TOKEN, GOTIFY_URL } from '$env/static/private'
-
-
+import { env } from '$env/dynamic/private'
 
 const newContactSchema = z.object({
     company: z.string().min(1),
@@ -37,11 +35,11 @@ export const actions = {
             };
 
             // Send mail with defined transport object
-            const info = await fetch(GOTIFY_URL, {
+            const info = await fetch(env.GOTIFY_URL, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
-                  'Authorization': 'pre-shared: ' + GOTIFY_TOKEN
+                  'Authorization': 'pre-shared: ' + env.GOTIFY_TOKEN
                 },
                 body: JSON.stringify(mailOptions)
               });

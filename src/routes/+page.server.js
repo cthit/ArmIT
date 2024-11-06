@@ -1,5 +1,5 @@
 // src/routes/contact/+page.server.js
-import { GOTIFY_TOKEN, GOTIFY_URL } from '$env/static/private'
+import { env } from '$env/dynamic/private'
 
 export const actions = {
     default: async ({ request }) => {
@@ -15,11 +15,11 @@ export const actions = {
         };
 
         try {
-            const info = await fetch(GOTIFY_URL, {
+            const info = await fetch(env.GOTIFY_URL, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
-                  'Authorization': 'pre-shared: ' + GOTIFY_TOKEN
+                  'Authorization': 'pre-shared: ' + env.GOTIFY_TOKEN
                 },
                 body: JSON.stringify(mailOptions)
               });
