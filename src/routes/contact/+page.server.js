@@ -24,8 +24,8 @@ export const actions = {
         try {
             // Define the email message
             let mailOptions = {
-                to: 'armit@chalmers.it, motin@chalmers.it', // list of receivers
-                from: '"Armit Website Contact Form" motin@chalmers.it', // sender address
+                to: 'armit@chalmers.it', // list of receivers
+                from: '"ArmIT Website Contact Form" armit@chalmers.it', // sender address
                 subject: '$CASH SEASON! 💵🤑ArmIT Contact Form Proposal', // Subject line
                 body: "Company: " + form.data.company + "\n" +
                     "Name: " + form.data.name + "\n" +
