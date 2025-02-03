@@ -48,13 +48,13 @@
                         <div class="w-3/4 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_48px,_black_calc(100%-48px),transparent_100%)] lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_96px,_black_calc(100%-96px),transparent_100%)]">
                             <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                                 <li>
-                                    <img alt="Accenture" src="/logos/company/lg_accenture.svg"/>
+                                    <img class="w-[128px] h-auto" alt="Accenture" src="/logos/company/lg_ericsson.svg"/>
                                 </li>
                                 <li>
                                     <img class="w-[192px] h-auto" alt="Centiro" src="/logos/company/lg_centiro.png"/>
                                 </li>
                                 <li>
-                                    <img class="w-[128px] h-auto" alt="Cygni" src="/logos/company/lg_cygni.png"/>
+                                    <img class="w-[192px] h-auto" alt="Cygni" src="/logos/company/lg_cygni.png"/>
                                 </li>
                                 <li>
                                     <img class="w-[192px] h-auto" alt="Opera" src="/logos/company/lg_opera_gx.png"/>
@@ -62,7 +62,7 @@
                             </ul>    
                             <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                                 <li>
-                                    <img alt="Accenture" src="/logos/company/lg_accenture.svg"/>
+                                    <img class="w-[192px] h-auto" alt="Accenture" src="/logos/company/lg_ericsson.svg"/>
                                 </li>
                                 <li>
                                     <img class="w-[192px] h-auto" alt="Centiro" src="/logos/company/lg_centiro.png"/>
