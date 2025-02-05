@@ -83,63 +83,9 @@
 
    
 
-
+        
         <!-- GRID 2 - CONTACT FORM -->
-        <div class=" mx-auto w-[85%] h-[85%] mb-12 self-center scroll-smooth">
-            <div class="w-[100%] h-[100%]">
-                <div class="mt-4 lg:mr-2 w-[85%] h-[100%] lg:float-right mx-auto">
-                    {#if !$message}
-                    <a href="/">
-                    <img class="mx-auto md:h-[100px] lg:h-[100px] max-h-[100px]" src="/logos/armit/lg_armit_plain.png" alt="ArmIT logo" draggable="false">
-                    </a>
-                         <!-- Hidden on lg: Get in Touch text and green line: -->
-                            <p
-                            class="lg:hidden text-center uppercase mt-6 mb-4 mx-auto text-white font-bold text-3xl"
-                            >
-                                Get in touch
-                            </p>
-                            <div
-                            class="lg:hidden mx-auto mb-8 bg-[#00FFC2] w-[230px] h-[3px] rounded-full"
-                            />
-                    <!-- <SuperDebug data={$form} /> -->
-                    
-                    <form use:enhance  id="contactForm" class="flex flex-col" method="POST" action="?/sendEmail" autocomplete="off">
-                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="company">*Company</label>
-                        <input class="form-input md:text-[16px] md:h-[28px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
-                        type="text" name="company" required autocomplete="off" bind:value={$form.company} />
-
-                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="name">*Name</label>
-                        <input class="form-input md:text-[16px] md:h-[28px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
-                        type="text" name="name" required autocomplete="off" bind:value={$form.name} />
-                      
-                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="email">*E-mail</label>
-                        <input class="form-input md:text-[16px] md:h-[28px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
-                        type="email" name="email" required autocomplete="off" bind:value={$form.email} />
-
-                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="phone">Phone number</label>
-                        <input class="form-input md:text-[16px] md:h-[28px] lg:h-fit xl:text-xl outline-0 focus:outline-white/10 focus:outline-1" 
-                        type="tel" name="phone" autocomplete="off" bind:value={$form.phone} />
-                        
-                        <label class="form-label md:text-[16px] lg:text-lg xl:text-base" for="message">Message</label>
-                        <textarea class="leading-normal resize-none h-32 form-input outline-0 focus:outline-white/10 focus:outline-1" 
-                        type="text" name="message" autocomplete="off" bind:value={$form.message} />
-
-                        <div class="flex border-solid rounded h-[50px] bg-black/75 text-white font-bold text-2xl hover:bg-black"><button class="mx-auto w-full" formaction="?/sendEmail">{submitButtonText}</button></div>
-                    </form>
-                    {/if}
-                    {#if $message}
-                            <div class="flex flex-col duration-500 text-white/75 font-bold text-2xl
-                            h-full w-full items-center
-                            ">
-                            <img class="animate-pulse h-[250px]" src="/logos/armit/lg_armit_plain.png" alt="">
-                                <p class="text-3xl mt-20">{$message}</p>
-                                <p class="text-3xl">We will contact you shortly</p>
-                                <a class="text-lg underline mt-6" href="/">Return to Homepage</a>
-                            </div>
-                    {/if}     
-                </div>
-            </div>
-        </div>
+        
     </div>
 </body>
 

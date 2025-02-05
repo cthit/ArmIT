@@ -37,3 +37,7 @@ docker run -p 3000:3000 <image id> #This will run a container of your image and 
 Developed and designed by the following members in ArmIT'23:
 
 Annelie Hansson, Liam Mayor, Mikael Motin
+
+Maintained by the following member of ArmIT'24
+
+Mårten Granath

@@ -4,14 +4,13 @@
     import { onMount } from 'svelte';
 
     let people = [
-        {name: "Kevin Collins", role: "President", image: "/portraits/individual/kev.png", linkedin: "https://www.linkedin.com/in/kevcol/", mail: "ordf.armit@chalmers.it"},
-        {name: "David Gidlöf", role: "Treasurer", image: "/portraits/individual/gide.png", linkedin: "https://www.linkedin.com/in/davidgidl%C3%B6f/", mail: "kassor.armit@chalmers.it"},
-        {name: "Liam Mayor", role: "Vice President", image: "/portraits/individual/post.png", linkedin: "https://www.linkedin.com/in/liam-mayor/", mail: "sekreterare.armit@chalmers.it"},
-        {name: "Annelie Hansson", role: "Head of Marketing", image: "/portraits/individual/waka.png", linkedin: "https://www.linkedin.com/in/annelie-w-hansson/", mail: "annelieh@chalmers.it"},
-        {name: "Hanna Bahilu", role:"Event Organizer", image: "/portraits/individual/montana.png", linkedin: "https://www.linkedin.com/in/hanna-bahilu-34a54b7d/", mail: "bahilu@chalmers.it"},
-        {name: "Hannah Tu", role: "Head of Logistics", image: "/portraits/individual/utarn.png", linkedin: "https://www.linkedin.com/in/hannah-tu/", mail: "tuha@chalmers.it"},
-        {name: "Mikael Motin", role:"Business Contact", image: "/portraits/individual/lustig.png", linkedin: "https://www.linkedin.com/in/mikael-motin-253292254/", mail: "motin@chalmers.it"},
-        {name: "Jonas Nemeth", role:"Business Contact", image: "/portraits/individual/doxxy.png", linkedin: "https://www.linkedin.com/in/jonas-nemeth-546b43b9/", mail: "jonasne@chalmers.it"}
+        {name: "Agnes Boman", role: "President", image: "/portraits/individual/meister.jpg", linkedin: "https://www.linkedin.com/in/agnes-boman-25aa9a225/", mail: "ordf.armit@chalmers.it"},
+        {name: "Nadia Farias", role: "Treasurer", image: "/portraits/individual/pufflan.jpg", linkedin: "https://www.linkedin.com/in/nadia-farias-56a9822b1/", mail: "kassor.armit@chalmers.it"},
+        {name: "Ida Borck", role: "Vice President", image: "/portraits/individual/borken.jpg", linkedin: "https://www.linkedin.com/in/ida-borck-337313204/", mail: "sekreterare.armit@chalmers.it"},
+        {name: "Julia Larsson", role: "Head of Marketing", image: "/portraits/individual/hjälmer.jpg", linkedin: "https://www.linkedin.com/in/julia-larsson-7106a1334/", mail: "julialar@chalmers.it"},
+        {name: "Cecilia Nordén", role:"Event Organizer", image: "/portraits/individual/moose.jpg", linkedin: "https://www.linkedin.com/in/cecilia-nord%C3%A9n-elgh-21473021a/", mail: "nordence@chalmers.it"},
+        {name: "Mårten Granath", role: "Head of Logistics", image: "/portraits/individual/granaten.jpg", linkedin: "https://www.linkedin.com/in/m%C3%A5rtengranath/", mail: "margrana@chalmers.it"},
+        {name: "Nicole Berginge", role:"Business Contact", image: "/portraits/individual/nickan.jpg", linkedin: "https://www.linkedin.com/in/nicole-berginge-4600b230b/", mail: "berginge@chalmers.it"}
     ]
 
     let currentIndex = writable(0);
@@ -88,7 +87,7 @@
     <div class="flex flex-col justify-center items-center gap-4">
         <div class="text-center">
             <p class="text-5xl font-bold text-[#1F1F3A]">Our Team</p>
-            <p class="text-xl font-semibold py-2 text-[#1F1F3A]/90">ArmIT'23 consists of 8 students:</p>
+            <p class="text-xl font-semibold py-2 text-[#1F1F3A]/90">ArmIT'24 consists of 8 students:</p>
         </div>
         <!-- Team Cards -->
         <div
