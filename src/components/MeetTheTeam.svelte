@@ -88,7 +88,7 @@
     <div class="flex flex-col justify-center items-center gap-4">
         <div class="text-center">
             <p class="text-5xl font-bold text-[#1F1F3A]">Our Team</p>
-            <p class="text-xl font-semibold py-2 text-[#1F1F3A]/90">ArmIT'24 consists of 8 students:</p>
+            <p class="text-xl font-semibold py-2 text-[#1F1F3A]/90">ArmIT'25 consists of 8 students:</p>
         </div>
         <!-- Team Cards -->
         <div
