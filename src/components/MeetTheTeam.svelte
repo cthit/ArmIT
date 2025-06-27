@@ -4,13 +4,14 @@
     import { onMount } from 'svelte';
 
     let people = [
-        {name: "Agnes Boman", role: "President", image: "/portraits/individual/meister.jpg", linkedin: "https://www.linkedin.com/in/agnes-boman-25aa9a225/", mail: "ordf.armit@chalmers.it"},
-        {name: "Nadia Farias", role: "Treasurer", image: "/portraits/individual/pufflan.jpg", linkedin: "https://www.linkedin.com/in/nadia-farias-56a9822b1/", mail: "kassor.armit@chalmers.it"},
-        {name: "Ida Borck", role: "Vice President", image: "/portraits/individual/borken.jpg", linkedin: "https://www.linkedin.com/in/ida-borck-337313204/", mail: "sekreterare.armit@chalmers.it"},
-        {name: "Julia Larsson", role: "Head of Marketing", image: "/portraits/individual/hjälmer.jpg", linkedin: "https://www.linkedin.com/in/julia-larsson-7106a1334/", mail: "julialar@chalmers.it"},
-        {name: "Cecilia Nordén", role:"Event Organizer", image: "/portraits/individual/moose.jpg", linkedin: "https://www.linkedin.com/in/cecilia-nord%C3%A9n-elgh-21473021a/", mail: "nordence@chalmers.it"},
-        {name: "Mårten Granath", role: "Head of Logistics", image: "/portraits/individual/granaten.jpg", linkedin: "https://www.linkedin.com/in/m%C3%A5rtengranath/", mail: "margrana@chalmers.it"},
-        {name: "Nicole Berginge", role:"Business Contact", image: "/portraits/individual/nickan.jpg", linkedin: "https://www.linkedin.com/in/nicole-berginge-4600b230b/", mail: "berginge@chalmers.it"}
+        {name: "Oscar Nurmi Torslund", role: "President", image: "/portraits/individual/25-26/nurmi.jpg", linkedin: "http://linkedin.com/in/oscar-nurmi-torslund-1a1960219", mail: "ordf.armit@chalmers.it"},
+        {name: "Simon Marainen Ulin", role: "Treasurer", image: "/portraits/individual/25-26/smu.jpg", linkedin: "http://linkedin.com/in/simon-marainen-ulin-6b1aa9324", mail: "kassor.armit@chalmers.it"},
+        {name: "Arvid Bergman", role: "Vice President", image: "/portraits/individual/25-26/ascii.jpg", linkedin: "", mail: "sekreterare.armit@chalmers.it"},
+        {name: "Annika Möller", role: "Head of Marketing", image: "/portraits/individual/25-26/ankan.jpg", linkedin: "http://linkedin.com/in/annika-möller-6226a3272", mail: "annikamo@chalmers.it"},
+        {name: "Daniel Esteban Lahti", role:"Business Contact", image: "/portraits/individual/25-26/door.jpg", linkedin: "http://linkedin.com/in/daniel-esteban-lahti-78213b25b", mail: "esteband@chalmers.it"},
+        {name: "Isak Wideskott", role: "Head of Logistics", image: "/portraits/individual/25-26/ball.jpeg", linkedin: "http://linkedin.com/in/isak-wideskott-3480b31a7", mail: "isakwid@chalmers.it"},
+        {name: "Atosa Daneshvar-Minabi", role:"Business Contact", image: "/portraits/individual/25-26/katt.jpg", linkedin: "http://linkedin.com/in/atosa-d-a16b011b5", mail: "atosad@chalmers.it"},
+        {name: "Leo Tieu", role:"MEDIT Contact", image: "/portraits/individual/25-26/mayo.jpeg", linkedin: "http://linkedin.com/in/leotieu", mail: "leoti@chalmers.it"}
     ]
 
     let currentIndex = writable(0);
@@ -94,7 +95,7 @@
             on:touchstart={handleTouchStart}
             on:touchmove={handleTouchMove}
             on:touchend={handleTouchEnd} 
-            class=" scale-90 mx-auto grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 items-center justify-items-center content-center w-4/5 gap-x-20 gap-y-8" id="team-images">
+            class=" scale-90 mx-auto grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 items-center justify-items-center content-center w-4/5 gap-x-5 gap-y-8" id="team-images">
             {#each displayItems as {name, role, image, linkedin, mail}, index (name + role + index)}
             <div    
                 in:fade={{ duration: 500 }} 
@@ -106,7 +107,7 @@
                     alt="Team member"
                 >
                 <div class="pt-2 flex flex-col items-center lg:items-start">
-                    <p class="text-2xl font-bold">{name}</p>
+                    <p class="text-xl font-bold py-2">{name}</p>
                     <p class="text-xl text-[#182E6F] font-bold pb-2">{role}</p>
                     <div class="flex flex-row gap-x-4">
                         <a href="{linkedin}" class="duration-300 hover:opacity-80 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" fill="#182E6F" stroke="white" stroke-width="2"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>

@@ -1,62 +1,62 @@
 {
-    "products":[
-        {
-            "itemName": "Lunch Seminars",
-            "description": "We offer both digital and physical seminars where you can capture your audience!",
-            "capacity": "100",
-            "time":"45min - 1h",
-            "price": "10 000",
-            "iconPath": "/icons/png/icon_seminar.png/",
-            "extras":[{"type": "photoshoot", "price":"1000"}]
-        },
-        {
-            "itemName": "Hackatons",
-            "description": "Engage your audience in a hands-on event where  learning together plays an important role",
-            "capacity": "not set",
-            "time":"not set",
-            "price": "not decided",
-            "iconPath": "/icons/png/icon_hackatons.png/",
-            "extras":[{"type": "photoshoot", "price":"1000"}]
-        },
-        {
-            "itemName": "Marketing",
-            "description": "We offer a broad variety of marketing solutions - all tailored to your specific needs",
-            "capacity": "not set",
-            "time":"not set",
-            "price": "not set",
-            "iconPath": "/icons/png/icon_marketing.png"
-        },
-        {
-            "itemName": "Study Breakfast",
-            "description": "Team up with IT's educational committee and contribute a snack to better prepare our students for exam periods",
-            "capacity": "not set",
-            "time":"not set",
-            "price": "not set",
-            "iconPath": "/icons/png/icon_breakfast.png"
-        },
-        {
-            "itemName": "Digital Events",
-            "description": "Connect with your audience through a digital meeting!",
-            "capacity": "not set",
-            "time":"not set",
-            "price": "not set",
-            "iconPath": "/icons/png/icon_digitalmarketing.png"
-        },
-        {
-            "itemName": "Company Merch",
-            "description": "Boost the mood with some of your merch!",
-            "capacity": "not set",
-            "time":"not set",
-            "price": "not set",
-            "iconPath": "/icons/png/icon_sponsored.png"
-        },
-        {
-            "itemName": "Sporting Events",
-            "description": "A fun and active way to engage with students",
-            "capacity": "not set",
-            "time":"not set",
-            "price": "not set",
-            "iconPath": "/icons/png/icon_sport.png"
-        }
-    ]
+  "products": [
+    {
+      "itemName": "Lunch Seminars",
+      "description": "We offer both digital and physical seminars where you can capture your audience!",
+      "capacity": "100",
+      "time": "45min - 1h",
+      "price": "10 000",
+      "iconPath": "/icons/png/icon_seminar.png",
+      "extras": [{ "type": "photoshoot", "price": "1000" }]
+    },
+    {
+      "itemName": "Hackatons",
+      "description": "Engage your audience in a hands-on event where  learning together plays an important role",
+      "capacity": "not set",
+      "time": "not set",
+      "price": "not decided",
+      "iconPath": "/icons/png/icon_hackatons.png",
+      "extras": [{ "type": "photoshoot", "price": "1000" }]
+    },
+    {
+      "itemName": "Marketing",
+      "description": "We offer a broad variety of marketing solutions - all tailored to your specific needs",
+      "capacity": "not set",
+      "time": "not set",
+      "price": "not set",
+      "iconPath": "/icons/png/icon_marketing.png"
+    },
+    {
+      "itemName": "Study Breakfast",
+      "description": "Team up with IT's educational committee and contribute a snack to better prepare our students for exam periods",
+      "capacity": "not set",
+      "time": "not set",
+      "price": "not set",
+      "iconPath": "/icons/png/icon_breakfast.png"
+    },
+    {
+      "itemName": "Digital Events",
+      "description": "Connect with your audience through a digital meeting!",
+      "capacity": "not set",
+      "time": "not set",
+      "price": "not set",
+      "iconPath": "/icons/png/icon_digitalmarketing.png"
+    },
+    {
+      "itemName": "Company Merch",
+      "description": "Boost the mood with some of your merch!",
+      "capacity": "not set",
+      "time": "not set",
+      "price": "not set",
+      "iconPath": "/icons/png/icon_sponsored.png"
+    },
+    {
+      "itemName": "Sporting Events",
+      "description": "A fun and active way to engage with students",
+      "capacity": "not set",
+      "time": "not set",
+      "price": "not set",
+      "iconPath": "/icons/png/icon_sport.png"
+    }
+  ]
 }
