@@ -11,7 +11,7 @@
             </a>
         </div>
         <div class="flex w-full justify-end p-12 items-center">
-            <button on:click={() => closeMobileMenu()}>
+            <button aria-label="Close menu" on:click={() => closeMobileMenu()}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1a2d45" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="hover:stroke-[#295891] transition-all feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
         </div>
@@ -28,13 +28,13 @@
             </div>
             <div class="flex flex-col flex-grow justify-end w-full text-navtext">
                 <div class="flex items-center justify-center w-full gap-8 mb-8">
-                    <a href="https://www.facebook.com/armitchalmers">
+                    <a href="https://www.facebook.com/armitchalmers" aria-label="ArmIT on Facebook">
                         <i class="hover:text-[#295891] transition-all fa-brands fa-facebook fa-2xl"></i>
                     </a>
-                    <a href="https://www.instagram.com/armit_chalmers/">
+                    <a href="https://www.instagram.com/armit_chalmers/" aria-label="ArmIT on Instagram">
                         <i class="hover:text-[#295891] transition-all fa-brands fa-instagram fa-2xl"></i>
                     </a>
-                    <a href="https://www.linkedin.com/company/armit/">
+                    <a href="https://www.linkedin.com/company/armit/" aria-label="ArmIT on LinkedIn">
                         <i class="hover:text-[#295891] transition-all fa-brands fa-linkedin fa-2xl"></i>
                     </a>
                 </div>
