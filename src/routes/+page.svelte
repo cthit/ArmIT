@@ -31,7 +31,7 @@
     
 </script>
 
-<div class="flex flex-col h-auto w-full max-w-full max-h-full overflow-hidden overscroll-contain">
+<div class="flex flex-col h-auto w-full max-w-full max-h-full overflow-x-hidden">
     <section id="home">
     <div class="flex w-full h-screen">
             <Menu/>
@@ -91,4 +91,3 @@
         <Footer/>
     </section>
 </div>
-

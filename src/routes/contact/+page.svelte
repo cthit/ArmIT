@@ -1,25 +1,10 @@
-<!-- https://superforms.rocks/get-started -->
-
 <script>
-    import { applyAction } from '$app/forms';
-    import { superForm } from 'sveltekit-superforms/client';
-    import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
-  
+    import { enhance } from '$app/forms';
 
-    export let data; // : PageData
-
-    let submitButtonText = "Submit"
-
-    const { form, enhance, errors, message, submitting, delayed, constraints} = superForm(data.form, {
-        resetForm: true,
-        delayMs: 500,
-        timeoutMs: 8000,
-        multipleSubmits: "prevent"
-    });
-
+    let { form } = $props();
 </script>
 
-<body
+<div
     class="
             flex justify-center items-center full-image-bg
             w-screen h-full overflow-scroll"
@@ -44,7 +29,6 @@
                     <p class="">
                         We would love to work with you. Send us a message!
                     </p>
-                    <p class="" />
                 </div>
 
                 <div
@@ -75,19 +59,63 @@
                     <a href="https://www.instagram.com/armit_chalmers/" target="_blank"><img src="/icons/png/instagram_icon.png" class="hover:opacity-50 transition-opacity ease-in" alt="instagram"  /></a>
                     <a href="https://www.facebook.com/armitchalmers/?locale=sv_SE" target="_blank"><img src="/icons/png/facebook_icon.png" class="hover:opacity-50 transition-opacity ease-in" alt="facebook"/></a>
                 </div>
-                <div
-                    class="mt-12 bg-[#00FFC2] w-[230px] h-[3px] rounded-full"
-                />
+                <div class="mt-12 bg-[#00FFC2] w-[230px] h-[3px] rounded-full"></div>
             </div>
         </div>
 
    
 
-        
         <!-- GRID 2 - CONTACT FORM -->
-        
+        <form
+            method="POST"
+            use:enhance
+            class="w-[85%] self-center py-16 lg:py-0 mx-auto flex flex-col"
+        >
+            <a href="/" class="flex pb-10 lg:hidden"><img src="/icons/svg/return.svg" class="hover:opacity-80 transition-opacity" alt="return"></a>
+
+            <p class="uppercase text-white font-bold text-3xl xl:text-5xl mb-10">
+                Contact us
+            </p>
+
+            {#if form?.success}
+                <div class="mb-6 rounded bg-[#00FFC2] px-4 py-3 font-semibold text-nav">
+                    Thanks for reaching out. We will get back to you soon.
+                </div>
+            {/if}
+
+            {#if form?.errors?.form}
+                <div class="mb-6 rounded bg-red-500/90 px-4 py-3 font-semibold text-white">
+                    {form.errors.form}
+                </div>
+            {/if}
+
+            <label class="form-label" for="company">Company</label>
+            <input class="form-input" id="company" name="company" autocomplete="organization" value={form?.values?.company ?? ''} required />
+            {#if form?.errors?.company}<p class="form-error">{form.errors.company}</p>{/if}
+
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" id="name" name="name" autocomplete="name" value={form?.values?.name ?? ''} required />
+            {#if form?.errors?.name}<p class="form-error">{form.errors.name}</p>{/if}
+
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" id="email" name="email" type="email" autocomplete="email" value={form?.values?.email ?? ''} required />
+            {#if form?.errors?.email}<p class="form-error">{form.errors.email}</p>{/if}
+
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-input" id="phone" name="phone" autocomplete="tel" value={form?.values?.phone ?? ''} />
+
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input min-h-40 resize-y" id="message" name="message">{form?.values?.message ?? ''}</textarea>
+
+            <button
+                type="submit"
+                class="mt-4 rounded-full bg-[#00FFC2] px-8 py-4 font-bold text-nav transition hover:opacity-80"
+            >
+                Submit
+            </button>
+        </form>
     </div>
-</body>
+</div>
 
 <style lang="postcss">
   
@@ -108,15 +136,21 @@
 
     .form-input {
         @apply
+        w-full
         rounded 
         py-2 
         px-3 
-        text-white/75
-        mb-6 
+        text-white
+        mb-2 
         leading-tight 
-        
+        border
+        border-white/20
         bg-[#373737]/50
         backdrop-blur-lg
     ;
+    }
+
+    .form-error {
+        @apply mb-4 text-sm font-semibold text-red-300;
     }
 </style>

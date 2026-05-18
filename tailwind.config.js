@@ -26,7 +26,7 @@ export default {
       },
       backgroundImage: {
         header: "url('/backgrounds/header_main.png')",
-        "header-mobile": "url('/backgrounds/header_phone.png/')",
+        "header-mobile": "url('/backgrounds/header_phone.png')",
         values: "url('/backgrounds/bg_values.png')",
       },
       animation: {

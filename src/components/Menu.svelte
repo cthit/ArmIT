@@ -16,7 +16,7 @@
             <a href="/contact" class="px-8 py-3 drop-shadow-xl leading-none bg-[#060928] hover:bg-nav transition-all lg:mt-0 rounded-full" draggable="false">Contact</a>
         </div>
         <div class="flex-grow justify-end p-12 items-center lg:hidden flex">
-            <button on:click={() => openMobileMenu()}>
+            <button aria-label="Open menu" on:click={() => openMobileMenu()}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hover:stroke-slate-300 transition-all feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
         </div>
