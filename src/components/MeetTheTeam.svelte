@@ -4,14 +4,10 @@
     import { onMount } from 'svelte';
 
     let people = [
-        {name: "Oscar Nurmi Torslund", role: "President", image: "/portraits/individual/25-26/nurmi.jpg", linkedin: "http://linkedin.com/in/oscar-nurmi-torslund-1a1960219", mail: "ordf.armit@chalmers.it"},
-        {name: "Simon Marainen Ulin", role: "Treasurer", image: "/portraits/individual/25-26/smu.jpg", linkedin: "http://linkedin.com/in/simon-marainen-ulin-6b1aa9324", mail: "kassor.armit@chalmers.it"},
-        {name: "Arvid Bergman", role: "Vice President", image: "/portraits/individual/25-26/ascii.jpg", linkedin: "", mail: "sekreterare.armit@chalmers.it"},
-        {name: "Annika Möller", role: "Head of Marketing", image: "/portraits/individual/25-26/ankan.jpg", linkedin: "http://linkedin.com/in/annika-möller-6226a3272", mail: "annikamo@chalmers.it"},
-        {name: "Daniel Esteban Lahti", role:"Business Contact", image: "/portraits/individual/25-26/door.jpg", linkedin: "http://linkedin.com/in/daniel-esteban-lahti-78213b25b", mail: "esteband@chalmers.it"},
-        {name: "Isak Wideskott", role: "Head of Logistics", image: "/portraits/individual/25-26/ball.jpeg", linkedin: "http://linkedin.com/in/isak-wideskott-3480b31a7", mail: "isakwid@chalmers.it"},
-        {name: "Atosa Daneshvar-Minabi", role:"Business Contact", image: "/portraits/individual/25-26/katt.jpg", linkedin: "http://linkedin.com/in/atosa-d-a16b011b5", mail: "atosad@chalmers.it"},
-        {name: "Leo Tieu", role:"MEDIT Contact", image: "/portraits/individual/25-26/mayo.jpeg", linkedin: "http://linkedin.com/in/leotieu", mail: "leoti@chalmers.it"}
+        {name: "Alexander Alonso", role:"President", image: "/portraits/individual/26-27/Alexander.jpg", linkedin: "https://www.linkedin.com/in/alexanderralonso/", mail: "alonsoal@chalmers.it"},
+        {name: "Anton Fyhr", role: "Treasurer", image: "/portraits/individual/26-27/Anton.jpg", linkedin: "https://www.linkedin.com/in/anton-fyhr-aaa7b0229/", mail: "antonfy@chalmers.it"},
+        {name: "Travis Mohlin", role:"Vice President", image: "/portraits/individual/26-27/Travis.jpg", linkedin: "https://www.linkedin.com/in/travismohlin/", mail: "travism@chalmers.it"},
+        {name: "Julia Larsson", role:"Head of Logistics", image: "/portraits/individual/26-27/Julia.jpg", linkedin: "https://www.linkedin.com/in/julia-larsson-7106a1334", mail: "julialar@chalmers.it"}
     ]
 
     let currentIndex = writable(0);
