@@ -3,7 +3,7 @@
         Our Partners
     </div>
     <div class="flex h-full w-full px-8 lg:px-12">
-        <div class="grid lg:grid-cols-4 lg:grid-rows-1 grid-cols-2 grid-rows-2 lg:gap-12 gap-4 [&_a]:bg-white [&_a]:w-auto [&_a]:drop-shadow-lg [&_a]:transition-all [&_a]:rounded-lg [&_a]:h-full w-full h-full">
+        <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-2 grid-rows-2 lg:gap-12 gap-4 [&_a]:bg-white [&_a]:w-auto [&_a]:drop-shadow-lg [&_a]:transition-all [&_a]:rounded-lg [&_a]:h-full w-full h-full">
             <a href="https://www.ericsson.com/en" class="flex justify-center items-center hover:scale-105 duration-300 border-black border-2 md:shadow-[12px_12px_0_#000] shadow-[6px_6px_0_#000] hover:shadow-[10px_10px_0_#000] md:hover:shadow-[20px_20px_0_#000]" draggable="false">
                 <img src="/logos/company/lg_ericsson.svg" class="object-contain max-w-full w-full h-auto" alt="Ericsson"/>
             </a>
@@ -11,9 +11,7 @@
                 <img class="object-contain px-4 w-full h-auto max-w-full" alt="Centiro" src="/logos/company/lg_centiro.png"/>
                 Main partner
             </a>
-            <a href="https://cygni.se/" class="flex justify-center items-center hover:scale-105 duration-300 border-black border-2 md:shadow-[12px_12px_0_#000] shadow-[6px_6px_0_#000] hover:shadow-[10px_10px_0_#000] md:hover:shadow-[20px_20px_0_#000]" draggable="false">
-                <img class="object-contain md:px-6 xl:px-24 max-w-full w-full h-auto" alt="Cygni" src="/logos/company/lg_cygni.png"/>
-            </a>
+            
             <a href="https://www.opera.com" class="flex justify-center items-center hover:scale-105 duration-300 border-black border-2 md:shadow-[12px_12px_0_#000] shadow-[6px_6px_0_#000] hover:shadow-[10px_10px_0_#000] md:hover:shadow-[20px_20px_0_#000]" draggable="false">
                 <img class="object-contain px-2 max-w-full w-full h-auto" alt="Opera" src="/logos/company/lg_opera_gx.png"/>
             </a>
